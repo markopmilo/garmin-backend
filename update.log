@@ -1,0 +1,1179 @@
+
+$ /Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py -a -m -s --download --import --analyze -l
+___Downloading Latest Data___
+Getting activities: '/Users/marko.p.milovanovic/HealthData/FitFiles/Activities' (25) temp /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpfi8k2mpv
+Recent monitoring data not found, using: 2025-08-07 : 1
+Downloading latest sleep data from: 2025-08-07
+___Importing Latest Data___
+Processing user settings data
+Processing profile data
+Processing profile data: {'measurement_system': 'DisplayMeasure.statute', 'gender': 'Gender.male', 'weight': 153.999530419, 'height': 5.741469825, 'vo2max_running': None, 'vo2max_cycling': None, 'handedness': 'right'}
+Processing user personal information data
+Processing profile data
+Processing profile data: {'locale': 'en', 'time_zone': 'America/Los_Angeles', 'country_code': 'US'}
+Processing user settings data
+Processing profile data
+Processing profile data: {'id': 400761600, 'userName': 'marko.p.milovanovich@gmail.com', 'name': 'Marko Milovanovic'}
+Processing [<FileType.settings: 2>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles
+Processing daily summary data
+Processing [<FileType.monitoring_b: 32>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring
+Processing sleep data
+Processing activities tcx data
+Processing latest activities summary data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+Processing activities detail data
+Processing [<FileType.activity: 4>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+___Analyzing Data___
+Summary Tables Generation:
+Generating table entries for 2022
+Generating table entries for 2025
+
+  0%|          | 0/6 [00:00<?, ?activities/s]
+100%|██████████| 6/6 [00:00<00:00, 7557.30activities/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.12s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.12s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.14s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.14s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.18s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.18s/days]
+
+  0%|          | 0/2 [00:00<?, ?days/s]
+ 50%|█████     | 1/2 [00:01<00:01,  1.10s/days]
+100%|██████████| 2/2 [00:02<00:00,  1.13s/days]
+100%|██████████| 2/2 [00:02<00:00,  1.13s/days]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 54.02files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 152.30files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 154.99files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 210.17files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 300.58files/s]
+
+  0%|          | 0/1462 [00:00<?, ?files/s]
+  3%|▎         | 50/1462 [00:00<00:02, 491.79files/s]
+  7%|▋         | 100/1462 [00:00<00:02, 490.58files/s]
+ 10%|█         | 153/1462 [00:00<00:02, 508.35files/s]
+ 15%|█▌        | 226/1462 [00:00<00:02, 593.89files/s]
+ 21%|██        | 301/1462 [00:00<00:01, 647.47files/s]
+ 25%|██▌       | 372/1462 [00:00<00:01, 666.65files/s]
+ 30%|███       | 444/1462 [00:00<00:01, 681.66files/s]
+ 35%|███▌      | 513/1462 [00:00<00:01, 672.53files/s]
+ 40%|███▉      | 581/1462 [00:00<00:01, 647.90files/s]
+ 45%|████▍     | 652/1462 [00:01<00:01, 663.87files/s]
+ 49%|████▉     | 719/1462 [00:01<00:01, 641.82files/s]
+ 54%|█████▎    | 784/1462 [00:01<00:01, 627.46files/s]
+ 59%|█████▊    | 856/1462 [00:01<00:00, 651.59files/s]
+ 63%|██████▎   | 922/1462 [00:01<00:00, 647.38files/s]
+ 68%|██████▊   | 999/1462 [00:01<00:00, 680.86files/s]
+ 74%|███████▎  | 1075/1462 [00:01<00:00, 701.48files/s]
+ 78%|███████▊  | 1146/1462 [00:01<00:00, 657.88files/s]
+ 83%|████████▎ | 1213/1462 [00:01<00:00, 612.93files/s]
+ 87%|████████▋ | 1276/1462 [00:02<00:00, 583.27files/s]
+ 91%|█████████▏| 1336/1462 [00:02<00:00, 560.75files/s]
+ 97%|█████████▋| 1414/1462 [00:02<00:00, 617.69files/s]
+100%|██████████| 1462/1462 [00:02<00:00, 630.99files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 114.76files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 157.70files/s]
+
+  0%|          | 0/5 [00:00<?, ?files/s]
+ 20%|██        | 1/5 [00:00<00:01,  3.23files/s]
+ 40%|████      | 2/5 [00:00<00:00,  3.66files/s]
+ 60%|██████    | 3/5 [00:00<00:00,  3.95files/s]
+ 80%|████████  | 4/5 [00:00<00:00,  4.37files/s]
+100%|██████████| 5/5 [00:01<00:00,  5.43files/s]
+100%|██████████| 5/5 [00:01<00:00,  4.62files/s]
+
+  0%|          | 0/2 [00:00<?, ?days/s]
+100%|██████████| 2/2 [00:00<00:00, 129.38days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+  2%|▏         | 1/52 [00:00<00:06,  8.43weeks/s]
+ 10%|▉         | 5/52 [00:00<00:01, 23.58weeks/s]
+ 19%|█▉        | 10/52 [00:00<00:01, 31.40weeks/s]
+ 29%|██▉       | 15/52 [00:00<00:01, 35.64weeks/s]
+ 38%|███▊      | 20/52 [00:00<00:00, 37.83weeks/s]
+ 48%|████▊     | 25/52 [00:00<00:00, 39.14weeks/s]
+ 58%|█████▊    | 30/52 [00:00<00:00, 39.33weeks/s]
+ 67%|██████▋   | 35/52 [00:00<00:00, 39.70weeks/s]
+ 77%|███████▋  | 40/52 [00:01<00:00, 39.99weeks/s]
+ 85%|████████▍ | 44/52 [00:01<00:00, 38.80weeks/s]
+ 94%|█████████▍| 49/52 [00:01<00:00, 39.52weeks/s]
+100%|██████████| 52/52 [00:01<00:00, 37.10weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 99.40months/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:00<00:00, 453.93days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+ 10%|▉         | 5/52 [00:00<00:01, 40.24weeks/s]
+ 19%|█▉        | 10/52 [00:00<00:01, 41.54weeks/s]
+ 29%|██▉       | 15/52 [00:00<00:00, 38.99weeks/s]
+ 37%|███▋      | 19/52 [00:00<00:00, 38.30weeks/s]
+ 46%|████▌     | 24/52 [00:00<00:00, 39.45weeks/s]
+ 56%|█████▌    | 29/52 [00:00<00:00, 40.51weeks/s]
+100%|██████████| 52/52 [00:00<00:00, 65.24weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 517.11months/s]
+
+exit=0
+
+$ /Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py -a -m -s --download --import --analyze -l
+___Downloading Latest Data___
+Getting activities: '/Users/marko.p.milovanovic/HealthData/FitFiles/Activities' (25) temp /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp1ayee3s4
+Recent monitoring data not found, using: 2025-08-07 : 1
+Downloading latest sleep data from: 2025-08-07
+___Importing Latest Data___
+Processing user settings data
+Processing profile data
+Processing profile data: {'measurement_system': 'DisplayMeasure.statute', 'gender': 'Gender.male', 'weight': 153.999530419, 'height': 5.741469825, 'vo2max_running': None, 'vo2max_cycling': None, 'handedness': 'right'}
+Processing user personal information data
+Processing profile data
+Processing profile data: {'locale': 'en', 'time_zone': 'America/Los_Angeles', 'country_code': 'US'}
+Processing user settings data
+Processing profile data
+Processing profile data: {'id': 400761600, 'userName': 'marko.p.milovanovich@gmail.com', 'name': 'Marko Milovanovic'}
+Processing [<FileType.settings: 2>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles
+Processing daily summary data
+Processing [<FileType.monitoring_b: 32>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring
+Processing sleep data
+Processing activities tcx data
+Processing latest activities summary data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+Processing activities detail data
+Processing [<FileType.activity: 4>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+___Analyzing Data___
+Summary Tables Generation:
+Generating table entries for 2022
+Generating table entries for 2025
+
+  0%|          | 0/6 [00:00<?, ?activities/s]
+100%|██████████| 6/6 [00:00<00:00, 9478.65activities/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.11s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.11s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.12s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.12s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.14s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.14s/days]
+
+  0%|          | 0/2 [00:00<?, ?days/s]
+ 50%|█████     | 1/2 [00:01<00:01,  1.10s/days]
+100%|██████████| 2/2 [00:02<00:00,  1.13s/days]
+100%|██████████| 2/2 [00:02<00:00,  1.12s/days]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 74.08files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 183.33files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 185.84files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 189.89files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 297.98files/s]
+
+  0%|          | 0/1462 [00:00<?, ?files/s]
+  6%|▌         | 91/1462 [00:00<00:01, 909.66files/s]
+ 14%|█▎        | 200/1462 [00:00<00:01, 1012.21files/s]
+ 21%|██▏       | 314/1462 [00:00<00:01, 1067.82files/s]
+ 29%|██▉       | 430/1462 [00:00<00:00, 1101.95files/s]
+ 37%|███▋      | 543/1462 [00:00<00:00, 1111.95files/s]
+ 45%|████▌     | 658/1462 [00:00<00:00, 1124.78files/s]
+ 53%|█████▎    | 771/1462 [00:00<00:00, 1120.82files/s]
+ 60%|██████    | 884/1462 [00:00<00:00, 1117.78files/s]
+ 68%|██████▊   | 997/1462 [00:00<00:00, 1118.97files/s]
+ 76%|███████▌  | 1109/1462 [00:01<00:00, 1023.73files/s]
+ 83%|████████▎ | 1213/1462 [00:01<00:00, 1027.30files/s]
+ 91%|█████████ | 1326/1462 [00:01<00:00, 1056.28files/s]
+ 98%|█████████▊| 1433/1462 [00:01<00:00, 1019.51files/s]
+100%|██████████| 1462/1462 [00:01<00:00, 1058.98files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 328.59files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 311.25files/s]
+
+  0%|          | 0/5 [00:00<?, ?files/s]
+ 20%|██        | 1/5 [00:00<00:00,  7.99files/s]
+ 40%|████      | 2/5 [00:00<00:00,  8.09files/s]
+ 60%|██████    | 3/5 [00:00<00:00,  6.21files/s]
+ 80%|████████  | 4/5 [00:00<00:00,  5.79files/s]
+100%|██████████| 5/5 [00:00<00:00,  6.68files/s]
+100%|██████████| 5/5 [00:00<00:00,  6.64files/s]
+
+  0%|          | 0/2 [00:00<?, ?days/s]
+100%|██████████| 2/2 [00:00<00:00, 136.21days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+  2%|▏         | 1/52 [00:00<00:05,  9.62weeks/s]
+ 12%|█▏        | 6/52 [00:00<00:01, 30.10weeks/s]
+ 21%|██        | 11/52 [00:00<00:01, 36.62weeks/s]
+ 29%|██▉       | 15/52 [00:00<00:00, 37.36weeks/s]
+ 38%|███▊      | 20/52 [00:00<00:00, 39.10weeks/s]
+ 48%|████▊     | 25/52 [00:00<00:00, 40.66weeks/s]
+ 58%|█████▊    | 30/52 [00:00<00:00, 41.53weeks/s]
+ 67%|██████▋   | 35/52 [00:00<00:00, 42.29weeks/s]
+ 77%|███████▋  | 40/52 [00:01<00:00, 40.63weeks/s]
+ 87%|████████▋ | 45/52 [00:01<00:00, 38.04weeks/s]
+ 96%|█████████▌| 50/52 [00:01<00:00, 38.92weeks/s]
+100%|██████████| 52/52 [00:01<00:00, 38.34weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 145.31months/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:00<00:00, 372.00days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+  8%|▊         | 4/52 [00:00<00:01, 31.39weeks/s]
+ 15%|█▌        | 8/52 [00:00<00:01, 33.89weeks/s]
+ 23%|██▎       | 12/52 [00:00<00:01, 31.43weeks/s]
+ 31%|███       | 16/52 [00:00<00:01, 32.67weeks/s]
+ 40%|████      | 21/52 [00:00<00:00, 36.05weeks/s]
+ 50%|█████     | 26/52 [00:00<00:00, 38.63weeks/s]
+ 60%|█████▉    | 31/52 [00:00<00:00, 40.15weeks/s]
+100%|██████████| 52/52 [00:00<00:00, 60.24weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 539.04months/s]
+
+exit=0
+
+$ /Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py -a -m -s --download --import --analyze -l
+___Downloading Latest Data___
+Getting activities: '/Users/marko.p.milovanovic/HealthData/FitFiles/Activities' (25) temp /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpktni51a_
+Recent monitoring data not found, using: 2025-08-07 : 1
+Recent sleep data not found, using: 2025-06-07 : 62
+___Importing Latest Data___
+Processing user settings data
+Processing profile data
+Processing profile data: {'measurement_system': 'DisplayMeasure.statute', 'gender': 'Gender.male', 'weight': 153.999530419, 'height': 5.741469825, 'vo2max_running': None, 'vo2max_cycling': None, 'handedness': 'right'}
+Processing user personal information data
+Processing profile data
+Processing profile data: {'locale': 'en', 'time_zone': 'America/Los_Angeles', 'country_code': 'US'}
+Processing user settings data
+Processing profile data
+Processing profile data: {'id': 400761600, 'userName': 'marko.p.milovanovich@gmail.com', 'name': 'Marko Milovanovic'}
+Processing [<FileType.settings: 2>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles
+Processing daily summary data
+Processing [<FileType.monitoring_b: 32>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring
+Processing sleep data
+Processing activities tcx data
+Processing latest activities summary data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+Processing activities detail data
+Processing [<FileType.activity: 4>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+___Analyzing Data___
+Summary Tables Generation:
+Generating table entries for 2022
+Generating table entries for 2025
+
+  0%|          | 0/6 [00:00<?, ?activities/s]
+100%|██████████| 6/6 [00:00<00:00, 8063.38activities/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.13s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.13s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.13s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.13s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.19s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.19s/days]
+
+  0%|          | 0/62 [00:00<?, ?days/s]
+  2%|▏         | 1/62 [00:01<01:07,  1.10s/days]
+  3%|▎         | 2/62 [00:02<01:07,  1.12s/days]
+  5%|▍         | 3/62 [00:03<01:05,  1.12s/days]
+  6%|▋         | 4/62 [00:04<01:04,  1.11s/days]
+  8%|▊         | 5/62 [00:05<01:03,  1.11s/days]
+ 10%|▉         | 6/62 [00:06<01:01,  1.11s/days]
+ 11%|█▏        | 7/62 [00:07<01:01,  1.11s/days]
+ 13%|█▎        | 8/62 [00:08<00:59,  1.11s/days]
+ 15%|█▍        | 9/62 [00:09<00:58,  1.11s/days]
+ 16%|█▌        | 10/62 [00:11<00:57,  1.11s/days]
+ 18%|█▊        | 11/62 [00:12<00:56,  1.10s/days]
+ 19%|█▉        | 12/62 [00:13<00:55,  1.10s/days]
+ 21%|██        | 13/62 [00:14<00:53,  1.10s/days]
+ 23%|██▎       | 14/62 [00:15<00:52,  1.10s/days]
+ 24%|██▍       | 15/62 [00:16<00:51,  1.10s/days]
+ 26%|██▌       | 16/62 [00:17<00:50,  1.10s/days]
+ 27%|██▋       | 17/62 [00:18<00:49,  1.10s/days]
+ 29%|██▉       | 18/62 [00:19<00:48,  1.11s/days]
+ 31%|███       | 19/62 [00:21<00:47,  1.11s/days]
+ 32%|███▏      | 20/62 [00:22<00:46,  1.10s/days]
+ 34%|███▍      | 21/62 [00:23<00:45,  1.10s/days]
+ 35%|███▌      | 22/62 [00:24<00:43,  1.10s/days]
+ 37%|███▋      | 23/62 [00:25<00:42,  1.10s/days]
+ 39%|███▊      | 24/62 [00:26<00:41,  1.10s/days]
+ 40%|████      | 25/62 [00:27<00:40,  1.10s/days]
+ 42%|████▏     | 26/62 [00:28<00:39,  1.10s/days]
+ 44%|████▎     | 27/62 [00:29<00:38,  1.11s/days]
+ 45%|████▌     | 28/62 [00:30<00:37,  1.11s/days]
+ 47%|████▋     | 29/62 [00:32<00:36,  1.12s/days]
+ 48%|████▊     | 30/62 [00:33<00:35,  1.11s/days]
+ 50%|█████     | 31/62 [00:34<00:34,  1.11s/days]
+ 52%|█████▏    | 32/62 [00:35<00:33,  1.10s/days]
+ 53%|█████▎    | 33/62 [00:36<00:31,  1.10s/days]
+ 55%|█████▍    | 34/62 [00:37<00:30,  1.10s/days]
+ 56%|█████▋    | 35/62 [00:38<00:29,  1.10s/days]
+ 58%|█████▊    | 36/62 [00:39<00:28,  1.10s/days]
+ 60%|█████▉    | 37/62 [00:40<00:27,  1.10s/days]
+ 61%|██████▏   | 38/62 [00:41<00:26,  1.10s/days]
+ 63%|██████▎   | 39/62 [00:43<00:26,  1.16s/days]
+ 65%|██████▍   | 40/62 [00:44<00:25,  1.14s/days]
+ 66%|██████▌   | 41/62 [00:45<00:23,  1.13s/days]
+ 68%|██████▊   | 42/62 [00:46<00:22,  1.12s/days]
+ 69%|██████▉   | 43/62 [00:47<00:21,  1.11s/days]
+ 71%|███████   | 44/62 [00:48<00:20,  1.11s/days]
+ 73%|███████▎  | 45/62 [00:49<00:18,  1.11s/days]
+ 74%|███████▍  | 46/62 [00:50<00:17,  1.11s/days]
+ 76%|███████▌  | 47/62 [00:52<00:16,  1.12s/days]
+ 77%|███████▋  | 48/62 [00:53<00:15,  1.11s/days]
+ 79%|███████▉  | 49/62 [00:54<00:14,  1.11s/days]
+ 81%|████████  | 50/62 [00:55<00:13,  1.11s/days]
+ 82%|████████▏ | 51/62 [00:56<00:12,  1.11s/days]
+ 84%|████████▍ | 52/62 [00:57<00:11,  1.11s/days]
+ 85%|████████▌ | 53/62 [00:58<00:10,  1.12s/days]
+ 87%|████████▋ | 54/62 [00:59<00:08,  1.11s/days]
+ 89%|████████▊ | 55/62 [01:00<00:07,  1.11s/days]
+ 90%|█████████ | 56/62 [01:02<00:06,  1.11s/days]
+ 92%|█████████▏| 57/62 [01:03<00:05,  1.10s/days]
+ 94%|█████████▎| 58/62 [01:04<00:04,  1.10s/days]
+ 95%|█████████▌| 59/62 [01:05<00:03,  1.10s/days]
+ 97%|█████████▋| 60/62 [01:06<00:02,  1.11s/days]
+ 98%|█████████▊| 61/62 [01:07<00:01,  1.11s/days]
+100%|██████████| 62/62 [01:08<00:00,  1.12s/days]
+100%|██████████| 62/62 [01:08<00:00,  1.11s/days]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 54.43files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 126.89files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 119.23files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 108.56files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 146.60files/s]
+
+  0%|          | 0/1462 [00:00<?, ?files/s]
+  2%|▏         | 32/1462 [00:00<00:04, 315.67files/s]
+  4%|▍         | 64/1462 [00:00<00:04, 310.03files/s]
+  7%|▋         | 97/1462 [00:00<00:04, 317.22files/s]
+  9%|▉         | 135/1462 [00:00<00:03, 341.15files/s]
+ 12%|█▏        | 178/1462 [00:00<00:03, 370.72files/s]
+ 15%|█▌        | 223/1462 [00:00<00:03, 396.96files/s]
+ 18%|█▊        | 267/1462 [00:00<00:02, 409.86files/s]
+ 21%|██        | 310/1462 [00:00<00:02, 414.39files/s]
+ 24%|██▍       | 356/1462 [00:00<00:02, 427.41files/s]
+ 27%|██▋       | 399/1462 [00:01<00:02, 418.03files/s]
+ 30%|███       | 441/1462 [00:01<00:02, 412.21files/s]
+ 33%|███▎      | 483/1462 [00:01<00:02, 403.66files/s]
+ 36%|███▌      | 524/1462 [00:01<00:02, 389.04files/s]
+ 39%|███▊      | 564/1462 [00:01<00:02, 378.03files/s]
+ 41%|████      | 602/1462 [00:01<00:02, 366.10files/s]
+ 44%|████▎     | 639/1462 [00:01<00:02, 358.29files/s]
+ 46%|████▋     | 678/1462 [00:01<00:02, 365.72files/s]
+ 49%|████▉     | 716/1462 [00:01<00:02, 367.89files/s]
+ 52%|█████▏    | 753/1462 [00:01<00:01, 360.81files/s]
+ 54%|█████▍    | 791/1462 [00:02<00:01, 364.88files/s]
+ 57%|█████▋    | 833/1462 [00:02<00:01, 378.73files/s]
+ 60%|█████▉    | 871/1462 [00:02<00:01, 362.40files/s]
+ 63%|██████▎   | 914/1462 [00:02<00:01, 379.25files/s]
+ 65%|██████▌   | 953/1462 [00:02<00:01, 281.82files/s]
+ 68%|██████▊   | 989/1462 [00:02<00:01, 298.99files/s]
+ 70%|███████   | 1025/1462 [00:02<00:01, 312.46files/s]
+ 72%|███████▏  | 1059/1462 [00:02<00:01, 319.43files/s]
+ 75%|███████▍  | 1093/1462 [00:03<00:01, 322.62files/s]
+ 77%|███████▋  | 1127/1462 [00:03<00:01, 301.30files/s]
+ 80%|███████▉  | 1163/1462 [00:03<00:00, 316.76files/s]
+ 82%|████████▏ | 1197/1462 [00:03<00:00, 321.45files/s]
+ 84%|████████▍ | 1231/1462 [00:03<00:00, 325.75files/s]
+ 87%|████████▋ | 1265/1462 [00:03<00:00, 324.86files/s]
+ 89%|████████▉ | 1301/1462 [00:03<00:00, 332.60files/s]
+ 92%|█████████▏| 1338/1462 [00:03<00:00, 342.38files/s]
+ 94%|█████████▍| 1374/1462 [00:03<00:00, 345.44files/s]
+ 96%|█████████▋| 1409/1462 [00:03<00:00, 338.79files/s]
+ 99%|█████████▉| 1444/1462 [00:04<00:00, 329.77files/s]
+100%|██████████| 1462/1462 [00:04<00:00, 350.71files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 207.51files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 214.72files/s]
+
+  0%|          | 0/5 [00:00<?, ?files/s]
+ 20%|██        | 1/5 [00:00<00:00,  7.59files/s]
+ 40%|████      | 2/5 [00:00<00:00,  8.26files/s]
+ 60%|██████    | 3/5 [00:00<00:00,  6.19files/s]
+ 80%|████████  | 4/5 [00:00<00:00,  5.64files/s]
+100%|██████████| 5/5 [00:00<00:00,  6.58files/s]
+100%|██████████| 5/5 [00:00<00:00,  6.55files/s]
+
+  0%|          | 0/2 [00:00<?, ?days/s]
+100%|██████████| 2/2 [00:00<00:00, 114.80days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+  2%|▏         | 1/52 [00:00<00:06,  8.19weeks/s]
+ 10%|▉         | 5/52 [00:00<00:02, 23.17weeks/s]
+ 17%|█▋        | 9/52 [00:00<00:01, 29.31weeks/s]
+ 27%|██▋       | 14/52 [00:00<00:01, 34.94weeks/s]
+ 37%|███▋      | 19/52 [00:00<00:00, 37.04weeks/s]
+ 44%|████▍     | 23/52 [00:00<00:00, 36.54weeks/s]
+ 54%|█████▍    | 28/52 [00:00<00:00, 38.03weeks/s]
+ 63%|██████▎   | 33/52 [00:00<00:00, 38.88weeks/s]
+ 71%|███████   | 37/52 [00:01<00:00, 38.84weeks/s]
+ 79%|███████▉  | 41/52 [00:01<00:00, 37.65weeks/s]
+ 88%|████████▊ | 46/52 [00:01<00:00, 39.26weeks/s]
+ 98%|█████████▊| 51/52 [00:01<00:00, 40.05weeks/s]
+100%|██████████| 52/52 [00:01<00:00, 36.57weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 123.31months/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:00<00:00, 412.05days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+  8%|▊         | 4/52 [00:00<00:01, 37.61weeks/s]
+ 17%|█▋        | 9/52 [00:00<00:01, 40.64weeks/s]
+ 27%|██▋       | 14/52 [00:00<00:00, 40.48weeks/s]
+ 37%|███▋      | 19/52 [00:00<00:00, 41.54weeks/s]
+ 46%|████▌     | 24/52 [00:00<00:00, 39.59weeks/s]
+ 54%|█████▍    | 28/52 [00:00<00:00, 39.43weeks/s]
+ 62%|██████▏   | 32/52 [00:00<00:00, 39.55weeks/s]
+100%|██████████| 52/52 [00:00<00:00, 64.74weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 282.79months/s]
+
+exit=0
+
+$ /Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py -a -m -s --download --import --analyze -l
+___Downloading Latest Data___
+Getting activities: '/Users/marko.p.milovanovic/HealthData/FitFiles/Activities' (25) temp /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp0231bqi5
+Recent monitoring data not found, using: 2025-08-07 : 1
+Downloading latest sleep data from: 2025-08-07
+___Importing Latest Data___
+Processing user settings data
+Processing profile data
+Processing profile data: {'measurement_system': 'DisplayMeasure.statute', 'gender': 'Gender.male', 'weight': 153.999530419, 'height': 5.741469825, 'vo2max_running': None, 'vo2max_cycling': None, 'handedness': 'right'}
+Processing user personal information data
+Processing profile data
+Processing profile data: {'locale': 'en', 'time_zone': 'America/Los_Angeles', 'country_code': 'US'}
+Processing user settings data
+Processing profile data
+Processing profile data: {'id': 400761600, 'userName': 'marko.p.milovanovich@gmail.com', 'name': 'Marko Milovanovic'}
+Processing [<FileType.settings: 2>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles
+Processing daily summary data
+Processing [<FileType.monitoring_b: 32>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring
+Processing sleep data
+Processing activities tcx data
+Processing latest activities summary data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+Processing activities detail data
+Processing [<FileType.activity: 4>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+___Analyzing Data___
+Summary Tables Generation:
+Generating table entries for 2022
+Generating table entries for 2025
+
+  0%|          | 0/6 [00:00<?, ?activities/s]
+100%|██████████| 6/6 [00:00<00:00, 7832.50activities/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.11s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.11s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.12s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.12s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.26s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.26s/days]
+
+  0%|          | 0/2 [00:00<?, ?days/s]
+ 50%|█████     | 1/2 [00:01<00:01,  1.10s/days]
+100%|██████████| 2/2 [00:02<00:00,  1.22s/days]
+100%|██████████| 2/2 [00:02<00:00,  1.21s/days]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 57.11files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 143.97files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 147.60files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 207.60files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 295.85files/s]
+
+  0%|          | 0/1462 [00:00<?, ?files/s]
+  8%|▊         | 111/1462 [00:00<00:01, 1103.31files/s]
+ 15%|█▌        | 224/1462 [00:00<00:01, 1114.88files/s]
+ 23%|██▎       | 336/1462 [00:00<00:01, 1108.92files/s]
+ 31%|███       | 449/1462 [00:00<00:00, 1116.12files/s]
+ 38%|███▊      | 561/1462 [00:00<00:00, 1095.63files/s]
+ 46%|████▌     | 671/1462 [00:00<00:00, 1090.41files/s]
+ 54%|█████▎    | 784/1462 [00:00<00:00, 1100.92files/s]
+ 61%|██████▏   | 898/1462 [00:00<00:00, 1110.84files/s]
+ 69%|██████▉   | 1010/1462 [00:00<00:00, 1100.13files/s]
+ 77%|███████▋  | 1121/1462 [00:01<00:00, 946.85files/s] 
+ 83%|████████▎ | 1220/1462 [00:01<00:00, 736.55files/s]
+ 91%|█████████ | 1330/1462 [00:01<00:00, 818.83files/s]
+ 99%|█████████▊| 1442/1462 [00:01<00:00, 891.49files/s]
+100%|██████████| 1462/1462 [00:01<00:00, 971.01files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 275.18files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 269.07files/s]
+
+  0%|          | 0/5 [00:00<?, ?files/s]
+ 20%|██        | 1/5 [00:00<00:00,  7.85files/s]
+ 40%|████      | 2/5 [00:00<00:00,  8.70files/s]
+ 60%|██████    | 3/5 [00:00<00:00,  6.30files/s]
+ 80%|████████  | 4/5 [00:00<00:00,  5.52files/s]
+100%|██████████| 5/5 [00:00<00:00,  6.33files/s]
+100%|██████████| 5/5 [00:00<00:00,  6.44files/s]
+
+  0%|          | 0/2 [00:00<?, ?days/s]
+100%|██████████| 2/2 [00:00<00:00, 140.20days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+  2%|▏         | 1/52 [00:00<00:05,  9.21weeks/s]
+ 12%|█▏        | 6/52 [00:00<00:01, 28.81weeks/s]
+ 21%|██        | 11/52 [00:00<00:01, 34.98weeks/s]
+ 29%|██▉       | 15/52 [00:00<00:01, 35.45weeks/s]
+ 37%|███▋      | 19/52 [00:00<00:00, 34.95weeks/s]
+ 44%|████▍     | 23/52 [00:00<00:00, 34.74weeks/s]
+ 52%|█████▏    | 27/52 [00:00<00:00, 36.00weeks/s]
+ 62%|██████▏   | 32/52 [00:00<00:00, 37.95weeks/s]
+ 71%|███████   | 37/52 [00:01<00:00, 38.91weeks/s]
+ 79%|███████▉  | 41/52 [00:01<00:00, 38.76weeks/s]
+ 87%|████████▋ | 45/52 [00:01<00:00, 38.22weeks/s]
+ 94%|█████████▍| 49/52 [00:01<00:00, 38.71weeks/s]
+100%|██████████| 52/52 [00:01<00:00, 36.57weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 160.74months/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:00<00:00, 468.64days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+ 10%|▉         | 5/52 [00:00<00:01, 43.23weeks/s]
+ 19%|█▉        | 10/52 [00:00<00:00, 43.60weeks/s]
+ 29%|██▉       | 15/52 [00:00<00:00, 43.56weeks/s]
+ 38%|███▊      | 20/52 [00:00<00:00, 43.19weeks/s]
+ 48%|████▊     | 25/52 [00:00<00:00, 43.48weeks/s]
+ 58%|█████▊    | 30/52 [00:00<00:00, 43.29weeks/s]
+100%|██████████| 52/52 [00:00<00:00, 70.04weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 424.48months/s]
+
+exit=0
+
+$ /Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py -a -m -s --download --import --analyze -l
+___Downloading Latest Data___
+Getting activities: '/Users/marko.p.milovanovic/HealthData/FitFiles/Activities' (25) temp /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpfsuneql0
+Recent monitoring data not found, using: 2025-08-07 : 1
+Downloading latest sleep data from: 2025-08-07
+___Importing Latest Data___
+Processing user settings data
+Processing profile data
+Processing profile data: {'measurement_system': 'DisplayMeasure.statute', 'gender': 'Gender.male', 'weight': 153.999530419, 'height': 5.741469825, 'vo2max_running': None, 'vo2max_cycling': None, 'handedness': 'right'}
+Processing user personal information data
+Processing profile data
+Processing profile data: {'locale': 'en', 'time_zone': 'America/Los_Angeles', 'country_code': 'US'}
+Processing user settings data
+Processing profile data
+Processing profile data: {'id': 400761600, 'userName': 'marko.p.milovanovich@gmail.com', 'name': 'Marko Milovanovic'}
+Processing [<FileType.settings: 2>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles
+Processing daily summary data
+Processing [<FileType.monitoring_b: 32>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring
+Processing sleep data
+Processing activities tcx data
+Processing latest activities summary data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+Processing activities detail data
+Processing [<FileType.activity: 4>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+___Analyzing Data___
+Summary Tables Generation:
+Generating table entries for 2022
+Generating table entries for 2025
+
+  0%|          | 0/6 [00:00<?, ?activities/s]
+100%|██████████| 6/6 [00:00<00:00, 7830.06activities/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.12s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.12s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.13s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.13s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.16s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.16s/days]
+
+  0%|          | 0/2 [00:00<?, ?days/s]
+ 50%|█████     | 1/2 [00:01<00:01,  1.10s/days]
+100%|██████████| 2/2 [00:02<00:00,  1.13s/days]
+100%|██████████| 2/2 [00:02<00:00,  1.12s/days]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 56.43files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 149.79files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 143.78files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 145.16files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 332.91files/s]
+
+  0%|          | 0/1462 [00:00<?, ?files/s]
+  3%|▎         | 39/1462 [00:00<00:03, 383.38files/s]
+  5%|▌         | 78/1462 [00:00<00:03, 378.52files/s]
+  9%|▊         | 127/1462 [00:00<00:03, 425.42files/s]
+ 13%|█▎        | 190/1462 [00:00<00:02, 503.70files/s]
+ 18%|█▊        | 258/1462 [00:00<00:02, 565.69files/s]
+ 22%|██▏       | 315/1462 [00:00<00:02, 565.57files/s]
+ 26%|██▌       | 375/1462 [00:00<00:01, 576.68files/s]
+ 31%|███       | 452/1462 [00:00<00:01, 636.83files/s]
+ 36%|███▌      | 526/1462 [00:00<00:01, 666.38files/s]
+ 41%|████      | 593/1462 [00:01<00:01, 632.67files/s]
+ 45%|████▍     | 657/1462 [00:01<00:01, 620.32files/s]
+ 49%|████▉     | 720/1462 [00:01<00:01, 618.12files/s]
+ 54%|█████▎    | 783/1462 [00:01<00:01, 619.40files/s]
+ 58%|█████▊    | 846/1462 [00:01<00:01, 613.51files/s]
+ 62%|██████▏   | 908/1462 [00:01<00:00, 614.29files/s]
+ 66%|██████▋   | 970/1462 [00:01<00:00, 596.59files/s]
+ 70%|███████   | 1030/1462 [00:01<00:00, 590.46files/s]
+ 75%|███████▍  | 1091/1462 [00:01<00:00, 593.72files/s]
+ 79%|███████▊  | 1151/1462 [00:02<00:00, 533.91files/s]
+ 83%|████████▎ | 1211/1462 [00:02<00:00, 549.57files/s]
+ 87%|████████▋ | 1267/1462 [00:02<00:00, 524.28files/s]
+ 90%|█████████ | 1321/1462 [00:02<00:00, 505.30files/s]
+ 95%|█████████▌| 1391/1462 [00:02<00:00, 557.55files/s]
+100%|██████████| 1462/1462 [00:02<00:00, 575.46files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 269.47files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 232.79files/s]
+
+  0%|          | 0/5 [00:00<?, ?files/s]
+ 20%|██        | 1/5 [00:00<00:00,  7.21files/s]
+ 40%|████      | 2/5 [00:00<00:00,  8.30files/s]
+ 60%|██████    | 3/5 [00:00<00:00,  6.21files/s]
+ 80%|████████  | 4/5 [00:00<00:00,  5.83files/s]
+100%|██████████| 5/5 [00:00<00:00,  6.83files/s]
+100%|██████████| 5/5 [00:00<00:00,  6.71files/s]
+
+  0%|          | 0/2 [00:00<?, ?days/s]
+100%|██████████| 2/2 [00:00<00:00, 118.62days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+  2%|▏         | 1/52 [00:00<00:05,  8.69weeks/s]
+ 12%|█▏        | 6/52 [00:00<00:01, 28.12weeks/s]
+ 21%|██        | 11/52 [00:00<00:01, 34.72weeks/s]
+ 31%|███       | 16/52 [00:00<00:00, 38.25weeks/s]
+ 40%|████      | 21/52 [00:00<00:00, 39.98weeks/s]
+ 50%|█████     | 26/52 [00:00<00:00, 41.65weeks/s]
+ 60%|█████▉    | 31/52 [00:00<00:00, 41.11weeks/s]
+ 69%|██████▉   | 36/52 [00:00<00:00, 41.60weeks/s]
+ 79%|███████▉  | 41/52 [00:01<00:00, 42.25weeks/s]
+ 88%|████████▊ | 46/52 [00:01<00:00, 42.89weeks/s]
+ 98%|█████████▊| 51/52 [00:01<00:00, 42.73weeks/s]
+100%|██████████| 52/52 [00:01<00:00, 39.81weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 113.10months/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:00<00:00, 464.49days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+ 10%|▉         | 5/52 [00:00<00:01, 43.51weeks/s]
+ 19%|█▉        | 10/52 [00:00<00:00, 44.47weeks/s]
+ 29%|██▉       | 15/52 [00:00<00:00, 44.30weeks/s]
+ 38%|███▊      | 20/52 [00:00<00:00, 44.03weeks/s]
+ 48%|████▊     | 25/52 [00:00<00:00, 44.30weeks/s]
+ 58%|█████▊    | 30/52 [00:00<00:00, 44.18weeks/s]
+100%|██████████| 52/52 [00:00<00:00, 71.75weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 533.36months/s]
+
+exit=0
+
+$ /Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py -a -m -s --download --import --analyze -l
+___Downloading Latest Data___
+Getting activities: '/Users/marko.p.milovanovic/HealthData/FitFiles/Activities' (25) temp /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpfj229n50
+Recent monitoring data not found, using: 2025-08-07 : 1
+Recent sleep data not found, using: 2025-06-07 : 62
+___Importing Latest Data___
+Processing user settings data
+Processing profile data
+Processing profile data: {'measurement_system': 'DisplayMeasure.statute', 'gender': 'Gender.male', 'weight': 153.999530419, 'height': 5.741469825, 'vo2max_running': None, 'vo2max_cycling': None, 'handedness': 'right'}
+Processing user personal information data
+Processing profile data
+Processing profile data: {'locale': 'en', 'time_zone': 'America/Los_Angeles', 'country_code': 'US'}
+Processing user settings data
+Processing profile data
+Processing profile data: {'id': 400761600, 'userName': 'marko.p.milovanovich@gmail.com', 'name': 'Marko Milovanovic'}
+Processing [<FileType.settings: 2>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles
+Processing daily summary data
+Processing [<FileType.monitoring_b: 32>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring
+Processing sleep data
+Processing activities tcx data
+Processing latest activities summary data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+Processing activities detail data
+Processing [<FileType.activity: 4>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+___Analyzing Data___
+Summary Tables Generation:
+Generating table entries for 2022
+Generating table entries for 2025
+
+  0%|          | 0/6 [00:00<?, ?activities/s]
+100%|██████████| 6/6 [00:00<00:00, 7918.76activities/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.11s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.11s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.14s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.14s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.17s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.17s/days]
+
+  0%|          | 0/62 [00:00<?, ?days/s]
+  2%|▏         | 1/62 [00:01<01:06,  1.10s/days]
+  3%|▎         | 2/62 [00:02<01:06,  1.12s/days]
+  5%|▍         | 3/62 [00:03<01:05,  1.11s/days]
+  6%|▋         | 4/62 [00:04<01:04,  1.11s/days]
+  8%|▊         | 5/62 [00:05<01:03,  1.11s/days]
+ 10%|▉         | 6/62 [00:06<01:02,  1.11s/days]
+ 11%|█▏        | 7/62 [00:07<01:01,  1.11s/days]
+ 13%|█▎        | 8/62 [00:08<00:59,  1.11s/days]
+ 15%|█▍        | 9/62 [00:09<00:58,  1.11s/days]
+ 16%|█▌        | 10/62 [00:11<00:57,  1.11s/days]
+ 18%|█▊        | 11/62 [00:12<00:56,  1.11s/days]
+ 19%|█▉        | 12/62 [00:13<00:55,  1.11s/days]
+ 21%|██        | 13/62 [00:14<00:54,  1.11s/days]
+ 23%|██▎       | 14/62 [00:15<00:53,  1.11s/days]
+ 24%|██▍       | 15/62 [00:16<00:51,  1.11s/days]
+ 26%|██▌       | 16/62 [00:17<00:50,  1.10s/days]
+ 27%|██▋       | 17/62 [00:18<00:49,  1.10s/days]
+ 29%|██▉       | 18/62 [00:19<00:48,  1.10s/days]
+ 31%|███       | 19/62 [00:21<00:47,  1.10s/days]
+ 32%|███▏      | 20/62 [00:22<00:46,  1.10s/days]
+ 34%|███▍      | 21/62 [00:23<00:45,  1.10s/days]
+ 35%|███▌      | 22/62 [00:24<00:44,  1.10s/days]
+ 37%|███▋      | 23/62 [00:25<00:42,  1.10s/days]
+ 39%|███▊      | 24/62 [00:26<00:41,  1.10s/days]
+ 40%|████      | 25/62 [00:27<00:40,  1.10s/days]
+ 42%|████▏     | 26/62 [00:28<00:39,  1.10s/days]
+ 44%|████▎     | 27/62 [00:29<00:38,  1.10s/days]
+ 45%|████▌     | 28/62 [00:30<00:37,  1.11s/days]
+ 47%|████▋     | 29/62 [00:32<00:36,  1.10s/days]
+ 48%|████▊     | 30/62 [00:33<00:35,  1.10s/days]
+ 50%|█████     | 31/62 [00:34<00:34,  1.10s/days]
+ 52%|█████▏    | 32/62 [00:35<00:33,  1.10s/days]
+ 53%|█████▎    | 33/62 [00:36<00:32,  1.11s/days]
+ 55%|█████▍    | 34/62 [00:37<00:30,  1.10s/days]
+ 56%|█████▋    | 35/62 [00:38<00:29,  1.10s/days]
+ 58%|█████▊    | 36/62 [00:39<00:28,  1.11s/days]
+ 60%|█████▉    | 37/62 [00:40<00:27,  1.11s/days]
+ 61%|██████▏   | 38/62 [00:41<00:26,  1.11s/days]
+ 63%|██████▎   | 39/62 [00:43<00:25,  1.11s/days]
+ 65%|██████▍   | 40/62 [00:44<00:24,  1.10s/days]
+ 66%|██████▌   | 41/62 [00:45<00:23,  1.10s/days]
+ 68%|██████▊   | 42/62 [00:46<00:22,  1.11s/days]
+ 69%|██████▉   | 43/62 [00:47<00:21,  1.11s/days]
+ 71%|███████   | 44/62 [00:48<00:19,  1.11s/days]
+ 73%|███████▎  | 45/62 [00:49<00:18,  1.11s/days]
+ 74%|███████▍  | 46/62 [00:50<00:17,  1.11s/days]
+ 76%|███████▌  | 47/62 [00:51<00:16,  1.11s/days]
+ 77%|███████▋  | 48/62 [00:53<00:15,  1.11s/days]
+ 79%|███████▉  | 49/62 [00:54<00:14,  1.11s/days]
+ 81%|████████  | 50/62 [00:55<00:13,  1.11s/days]
+ 82%|████████▏ | 51/62 [00:56<00:12,  1.11s/days]
+ 84%|████████▍ | 52/62 [00:57<00:11,  1.11s/days]
+ 85%|████████▌ | 53/62 [00:58<00:09,  1.11s/days]
+ 87%|████████▋ | 54/62 [00:59<00:08,  1.10s/days]
+ 89%|████████▊ | 55/62 [01:00<00:07,  1.11s/days]
+ 90%|█████████ | 56/62 [01:01<00:06,  1.11s/days]
+ 92%|█████████▏| 57/62 [01:03<00:05,  1.11s/days]
+ 94%|█████████▎| 58/62 [01:04<00:04,  1.10s/days]
+ 95%|█████████▌| 59/62 [01:05<00:03,  1.15s/days]
+ 97%|█████████▋| 60/62 [01:06<00:02,  1.15s/days]
+ 98%|█████████▊| 61/62 [01:07<00:01,  1.13s/days]
+100%|██████████| 62/62 [01:08<00:00,  1.14s/days]
+100%|██████████| 62/62 [01:08<00:00,  1.11s/days]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 39.26files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 99.39files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 116.24files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 113.09files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 114.42files/s]
+
+  0%|          | 0/1462 [00:00<?, ?files/s]
+  1%|▏         | 21/1462 [00:00<00:06, 208.70files/s]
+  3%|▎         | 50/1462 [00:00<00:05, 256.32files/s]
+  6%|▌         | 86/1462 [00:00<00:04, 302.63files/s]
+  9%|▉         | 128/1462 [00:00<00:03, 346.07files/s]
+ 12%|█▏        | 172/1462 [00:00<00:03, 379.53files/s]
+ 15%|█▍        | 214/1462 [00:00<00:03, 391.35files/s]
+ 18%|█▊        | 259/1462 [00:00<00:02, 408.56files/s]
+ 21%|██        | 300/1462 [00:00<00:02, 406.89files/s]
+ 23%|██▎       | 342/1462 [00:00<00:02, 408.94files/s]
+ 26%|██▌       | 383/1462 [00:01<00:02, 408.22files/s]
+ 29%|██▉       | 431/1462 [00:01<00:02, 427.88files/s]
+ 32%|███▏      | 474/1462 [00:01<00:02, 422.15files/s]
+ 35%|███▌      | 517/1462 [00:01<00:02, 422.66files/s]
+ 38%|███▊      | 561/1462 [00:01<00:02, 427.62files/s]
+ 42%|████▏     | 608/1462 [00:01<00:01, 438.21files/s]
+ 45%|████▍     | 654/1462 [00:01<00:01, 443.83files/s]
+ 48%|████▊     | 700/1462 [00:01<00:01, 446.02files/s]
+ 51%|█████     | 745/1462 [00:01<00:01, 384.77files/s]
+ 54%|█████▎    | 785/1462 [00:01<00:01, 379.26files/s]
+ 56%|█████▋    | 825/1462 [00:02<00:01, 384.14files/s]
+ 59%|█████▉    | 865/1462 [00:02<00:01, 378.39files/s]
+ 62%|██████▏   | 904/1462 [00:02<00:01, 377.14files/s]
+ 65%|██████▍   | 947/1462 [00:02<00:01, 389.86files/s]
+ 68%|██████▊   | 989/1462 [00:02<00:01, 397.87files/s]
+ 70%|███████   | 1030/1462 [00:02<00:01, 350.44files/s]
+ 73%|███████▎  | 1067/1462 [00:02<00:01, 338.54files/s]
+ 76%|███████▌  | 1104/1462 [00:02<00:01, 344.81files/s]
+ 78%|███████▊  | 1140/1462 [00:03<00:01, 319.16files/s]
+ 81%|████████  | 1178/1462 [00:03<00:00, 334.94files/s]
+ 83%|████████▎ | 1213/1462 [00:03<00:00, 334.07files/s]
+ 85%|████████▌ | 1247/1462 [00:03<00:00, 330.48files/s]
+ 88%|████████▊ | 1287/1462 [00:03<00:00, 348.66files/s]
+ 91%|█████████ | 1330/1462 [00:03<00:00, 369.99files/s]
+ 94%|█████████▍| 1374/1462 [00:03<00:00, 387.90files/s]
+ 97%|█████████▋| 1414/1462 [00:03<00:00, 390.63files/s]
+100%|█████████▉| 1455/1462 [00:03<00:00, 393.65files/s]
+100%|██████████| 1462/1462 [00:03<00:00, 379.95files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 252.36files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 188.47files/s]
+
+  0%|          | 0/5 [00:00<?, ?files/s]
+ 20%|██        | 1/5 [00:00<00:00,  7.22files/s]
+ 40%|████      | 2/5 [00:00<00:00,  8.16files/s]
+ 60%|██████    | 3/5 [00:00<00:00,  5.91files/s]
+ 80%|████████  | 4/5 [00:00<00:00,  5.60files/s]
+100%|██████████| 5/5 [00:00<00:00,  6.53files/s]
+
+  0%|          | 0/2 [00:00<?, ?days/s]
+100%|██████████| 2/2 [00:00<00:00, 125.66days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+  2%|▏         | 1/52 [00:00<00:05,  9.09weeks/s]
+ 10%|▉         | 5/52 [00:00<00:01, 26.07weeks/s]
+ 19%|█▉        | 10/52 [00:00<00:01, 33.34weeks/s]
+ 29%|██▉       | 15/52 [00:00<00:00, 37.01weeks/s]
+ 38%|███▊      | 20/52 [00:00<00:00, 38.62weeks/s]
+ 46%|████▌     | 24/52 [00:00<00:00, 38.93weeks/s]
+ 56%|█████▌    | 29/52 [00:00<00:00, 39.63weeks/s]
+ 63%|██████▎   | 33/52 [00:00<00:00, 39.60weeks/s]
+ 73%|███████▎  | 38/52 [00:01<00:00, 40.46weeks/s]
+ 83%|████████▎ | 43/52 [00:01<00:00, 41.28weeks/s]
+ 92%|█████████▏| 48/52 [00:01<00:00, 40.96weeks/s]
+100%|██████████| 52/52 [00:01<00:00, 38.38weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 83.29months/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:00<00:00, 454.37days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+ 10%|▉         | 5/52 [00:00<00:01, 42.92weeks/s]
+ 19%|█▉        | 10/52 [00:00<00:00, 43.46weeks/s]
+ 29%|██▉       | 15/52 [00:00<00:00, 43.92weeks/s]
+ 38%|███▊      | 20/52 [00:00<00:00, 42.98weeks/s]
+ 48%|████▊     | 25/52 [00:00<00:00, 43.09weeks/s]
+ 58%|█████▊    | 30/52 [00:00<00:00, 43.28weeks/s]
+100%|██████████| 52/52 [00:00<00:00, 70.42weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 547.27months/s]
+
+exit=0
+
+$ /Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py -a -m -s --download --import --analyze -l
+___Downloading Latest Data___
+Getting activities: '/Users/marko.p.milovanovic/HealthData/FitFiles/Activities' (25) temp /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpb1564f9z
+Recent monitoring data not found, using: 2025-08-07 : 1
+Recent sleep data not found, using: 2025-06-07 : 62
+___Importing Latest Data___
+Processing user settings data
+Processing profile data
+Processing profile data: {'measurement_system': 'DisplayMeasure.statute', 'gender': 'Gender.male', 'weight': 153.999530419, 'height': 5.741469825, 'vo2max_running': None, 'vo2max_cycling': None, 'handedness': 'right'}
+Processing user personal information data
+Processing profile data
+Processing profile data: {'locale': 'en', 'time_zone': 'America/Los_Angeles', 'country_code': 'US'}
+Processing user settings data
+Processing profile data
+Processing profile data: {'id': 400761600, 'userName': 'marko.p.milovanovich@gmail.com', 'name': 'Marko Milovanovic'}
+Processing [<FileType.settings: 2>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles
+Processing daily summary data
+Processing [<FileType.monitoring_b: 32>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring
+Processing sleep data
+Processing activities tcx data
+Processing latest activities summary data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+Processing activities detail data
+Processing [<FileType.activity: 4>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+___Analyzing Data___
+Summary Tables Generation:
+Generating table entries for 2022
+Generating table entries for 2025
+
+  0%|          | 0/6 [00:00<?, ?activities/s]
+100%|██████████| 6/6 [00:00<00:00, 9023.24activities/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.09s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.09s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.11s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.11s/days]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:01<00:00,  1.16s/days]
+100%|██████████| 1/1 [00:01<00:00,  1.16s/days]
+
+  0%|          | 0/62 [00:00<?, ?days/s]
+  2%|▏         | 1/62 [00:01<01:07,  1.10s/days]
+  3%|▎         | 2/62 [00:02<01:07,  1.12s/days]
+  5%|▍         | 3/62 [00:03<01:05,  1.10s/days]
+  6%|▋         | 4/62 [00:04<01:03,  1.10s/days]
+  8%|▊         | 5/62 [00:05<01:02,  1.10s/days]
+ 10%|▉         | 6/62 [00:06<01:01,  1.10s/days]
+ 11%|█▏        | 7/62 [00:07<01:00,  1.10s/days]
+ 13%|█▎        | 8/62 [00:08<00:59,  1.10s/days]
+ 15%|█▍        | 9/62 [00:09<00:58,  1.10s/days]
+ 16%|█▌        | 10/62 [00:11<00:57,  1.10s/days]
+ 18%|█▊        | 11/62 [00:12<00:56,  1.10s/days]
+ 19%|█▉        | 12/62 [00:13<00:54,  1.10s/days]
+ 21%|██        | 13/62 [00:14<00:53,  1.10s/days]
+ 23%|██▎       | 14/62 [00:15<00:52,  1.10s/days]
+ 24%|██▍       | 15/62 [00:16<00:51,  1.11s/days]
+ 26%|██▌       | 16/62 [00:17<00:50,  1.10s/days]
+ 27%|██▋       | 17/62 [00:18<00:49,  1.10s/days]
+ 29%|██▉       | 18/62 [00:19<00:48,  1.10s/days]
+ 31%|███       | 19/62 [00:20<00:47,  1.10s/days]
+ 32%|███▏      | 20/62 [00:22<00:46,  1.10s/days]
+ 34%|███▍      | 21/62 [00:23<00:44,  1.10s/days]
+ 35%|███▌      | 22/62 [00:24<00:43,  1.09s/days]
+ 37%|███▋      | 23/62 [00:25<00:42,  1.10s/days]
+ 39%|███▊      | 24/62 [00:26<00:41,  1.10s/days]
+ 40%|████      | 25/62 [00:27<00:40,  1.10s/days]
+ 42%|████▏     | 26/62 [00:28<00:39,  1.10s/days]
+ 44%|████▎     | 27/62 [00:29<00:38,  1.10s/days]
+ 45%|████▌     | 28/62 [00:30<00:37,  1.11s/days]
+ 47%|████▋     | 29/62 [00:31<00:36,  1.11s/days]
+ 48%|████▊     | 30/62 [00:33<00:35,  1.10s/days]
+ 50%|█████     | 31/62 [00:34<00:34,  1.10s/days]
+ 52%|█████▏    | 32/62 [00:35<00:32,  1.10s/days]
+ 53%|█████▎    | 33/62 [00:36<00:32,  1.10s/days]
+ 55%|█████▍    | 34/62 [00:37<00:30,  1.10s/days]
+ 56%|█████▋    | 35/62 [00:38<00:29,  1.10s/days]
+ 58%|█████▊    | 36/62 [00:39<00:28,  1.11s/days]
+ 60%|█████▉    | 37/62 [00:40<00:27,  1.11s/days]
+ 61%|██████▏   | 38/62 [00:41<00:26,  1.10s/days]
+ 63%|██████▎   | 39/62 [00:42<00:25,  1.11s/days]
+ 65%|██████▍   | 40/62 [00:44<00:24,  1.10s/days]
+ 66%|██████▌   | 41/62 [00:45<00:23,  1.10s/days]
+ 68%|██████▊   | 42/62 [00:46<00:22,  1.10s/days]
+ 69%|██████▉   | 43/62 [00:47<00:20,  1.10s/days]
+ 71%|███████   | 44/62 [00:48<00:19,  1.10s/days]
+ 73%|███████▎  | 45/62 [00:49<00:18,  1.10s/days]
+ 74%|███████▍  | 46/62 [00:50<00:17,  1.10s/days]
+ 76%|███████▌  | 47/62 [00:51<00:16,  1.10s/days]
+ 77%|███████▋  | 48/62 [00:52<00:15,  1.11s/days]
+ 79%|███████▉  | 49/62 [00:53<00:14,  1.11s/days]
+ 81%|████████  | 50/62 [00:55<00:13,  1.11s/days]
+ 82%|████████▏ | 51/62 [00:56<00:12,  1.10s/days]
+ 84%|████████▍ | 52/62 [00:57<00:10,  1.10s/days]
+ 85%|████████▌ | 53/62 [00:58<00:09,  1.10s/days]
+ 87%|████████▋ | 54/62 [00:59<00:08,  1.10s/days]
+ 89%|████████▊ | 55/62 [01:00<00:07,  1.10s/days]
+ 90%|█████████ | 56/62 [01:01<00:06,  1.11s/days]
+ 92%|█████████▏| 57/62 [01:02<00:05,  1.11s/days]
+ 94%|█████████▎| 58/62 [01:03<00:04,  1.11s/days]
+ 95%|█████████▌| 59/62 [01:05<00:03,  1.11s/days]
+ 97%|█████████▋| 60/62 [01:06<00:02,  1.10s/days]
+ 98%|█████████▊| 61/62 [01:07<00:01,  1.10s/days]
+100%|██████████| 62/62 [01:08<00:00,  1.11s/days]
+100%|██████████| 62/62 [01:08<00:00,  1.10s/days]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 51.46files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 124.10files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 162.71files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 134.24files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 174.70files/s]
+
+  0%|          | 0/1462 [00:00<?, ?files/s]
+  3%|▎         | 38/1462 [00:00<00:03, 374.96files/s]
+  5%|▌         | 80/1462 [00:00<00:03, 396.69files/s]
+  8%|▊         | 121/1462 [00:00<00:03, 398.69files/s]
+ 11%|█         | 161/1462 [00:00<00:03, 395.22files/s]
+ 14%|█▍        | 203/1462 [00:00<00:03, 400.54files/s]
+ 17%|█▋        | 247/1462 [00:00<00:02, 411.34files/s]
+ 20%|█▉        | 289/1462 [00:00<00:02, 395.25files/s]
+ 23%|██▎       | 329/1462 [00:00<00:02, 384.29files/s]
+ 25%|██▌       | 372/1462 [00:00<00:02, 396.22files/s]
+ 29%|██▊       | 419/1462 [00:01<00:02, 416.24files/s]
+ 32%|███▏      | 465/1462 [00:01<00:02, 427.02files/s]
+ 35%|███▌      | 512/1462 [00:01<00:02, 438.23files/s]
+ 38%|███▊      | 562/1462 [00:01<00:01, 454.37files/s]
+ 42%|████▏     | 608/1462 [00:01<00:01, 447.40files/s]
+ 45%|████▍     | 653/1462 [00:01<00:01, 446.62files/s]
+ 48%|████▊     | 698/1462 [00:01<00:01, 440.27files/s]
+ 51%|█████     | 743/1462 [00:01<00:01, 439.07files/s]
+ 54%|█████▍    | 787/1462 [00:01<00:01, 429.60files/s]
+ 57%|█████▋    | 831/1462 [00:01<00:01, 427.43files/s]
+ 60%|█████▉    | 874/1462 [00:02<00:01, 416.71files/s]
+ 63%|██████▎   | 917/1462 [00:02<00:01, 418.88files/s]
+ 66%|██████▌   | 962/1462 [00:02<00:01, 426.89files/s]
+ 69%|██████▉   | 1010/1462 [00:02<00:01, 441.08files/s]
+ 72%|███████▏  | 1058/1462 [00:02<00:00, 451.45files/s]
+ 76%|███████▌  | 1106/1462 [00:02<00:00, 459.70files/s]
+ 79%|███████▉  | 1153/1462 [00:02<00:00, 411.68files/s]
+ 82%|████████▏ | 1196/1462 [00:02<00:00, 392.03files/s]
+ 85%|████████▍ | 1237/1462 [00:02<00:00, 371.30files/s]
+ 87%|████████▋ | 1277/1462 [00:03<00:00, 378.53files/s]
+ 90%|█████████ | 1320/1462 [00:03<00:00, 392.19files/s]
+ 93%|█████████▎| 1362/1462 [00:03<00:00, 396.98files/s]
+ 96%|█████████▌| 1403/1462 [00:03<00:00, 366.54files/s]
+ 99%|█████████▊| 1441/1462 [00:03<00:00, 246.84files/s]
+100%|██████████| 1462/1462 [00:03<00:00, 389.21files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 231.37files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 220.51files/s]
+
+  0%|          | 0/5 [00:00<?, ?files/s]
+ 20%|██        | 1/5 [00:00<00:00,  6.46files/s]
+ 40%|████      | 2/5 [00:00<00:00,  7.73files/s]
+ 60%|██████    | 3/5 [00:00<00:00,  5.46files/s]
+ 80%|████████  | 4/5 [00:00<00:00,  4.59files/s]
+100%|██████████| 5/5 [00:00<00:00,  5.36files/s]
+100%|██████████| 5/5 [00:00<00:00,  5.46files/s]
+
+  0%|          | 0/2 [00:00<?, ?days/s]
+100%|██████████| 2/2 [00:00<00:00, 104.71days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+  2%|▏         | 1/52 [00:00<00:06,  8.44weeks/s]
+ 10%|▉         | 5/52 [00:00<00:01, 23.64weeks/s]
+ 17%|█▋        | 9/52 [00:00<00:01, 30.31weeks/s]
+ 27%|██▋       | 14/52 [00:00<00:01, 35.43weeks/s]
+ 37%|███▋      | 19/52 [00:00<00:00, 38.44weeks/s]
+ 46%|████▌     | 24/52 [00:00<00:00, 39.87weeks/s]
+ 56%|█████▌    | 29/52 [00:00<00:00, 41.30weeks/s]
+ 65%|██████▌   | 34/52 [00:00<00:00, 39.06weeks/s]
+ 75%|███████▌  | 39/52 [00:01<00:00, 39.61weeks/s]
+ 85%|████████▍ | 44/52 [00:01<00:00, 40.50weeks/s]
+ 94%|█████████▍| 49/52 [00:01<00:00, 41.13weeks/s]
+100%|██████████| 52/52 [00:01<00:00, 38.00weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 102.42months/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:00<00:00, 529.72days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+ 10%|▉         | 5/52 [00:00<00:01, 43.56weeks/s]
+ 19%|█▉        | 10/52 [00:00<00:00, 42.11weeks/s]
+ 29%|██▉       | 15/52 [00:00<00:00, 41.78weeks/s]
+ 38%|███▊      | 20/52 [00:00<00:00, 41.45weeks/s]
+ 48%|████▊     | 25/52 [00:00<00:00, 41.65weeks/s]
+ 58%|█████▊    | 30/52 [00:00<00:00, 41.20weeks/s]
+100%|██████████| 52/52 [00:00<00:00, 67.26weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 459.35months/s]
+
+exit=0
