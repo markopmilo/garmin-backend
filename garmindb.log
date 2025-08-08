@@ -4,11 +4,12 @@ INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.
 INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/plugin.py:Loading plugins from /Users/marko.p.milovanovic/HealthData/Plugins
 INFO:root:Enabled statistics: [<Statistics.activities: 7>, <Statistics.monitoring: 1>, <Statistics.sleep: 4>]
 INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py:___Downloading Latest Data___
-INFO:root:load session from /Users/marko.p.milovanovic/.GarminDb/garth_session
+INFO:root:session file /Users/marko.p.milovanovic/.GarminDb/garth_session not found
+INFO:root:save session to /Users/marko.p.milovanovic/.GarminDb/garth_session
 INFO:root:login: Marko Milovanovic (7208d189-7e42-4d7d-998e-1bd917f08c2a)
 INFO:root:Fetching 25 activities to /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
 INFO:root:get_activity_types: '/Users/marko.p.milovanovic/HealthData/FitFiles/Activities'
-INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garmindb/download.py:Getting activities: '/Users/marko.p.milovanovic/HealthData/FitFiles/Activities' (25) temp /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpjaztgugx
+INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garmindb/download.py:Getting activities: '/Users/marko.p.milovanovic/HealthData/FitFiles/Activities' (25) temp /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpkdd6ddat
 INFO:root:get_activity_summaries
 INFO:root:get_activities: Seattle Other (19986185467)
 INFO:root:get_activities: skipping download of 19986185467, already present
@@ -22,7 +23,7 @@ INFO:root:get_activities: Walking (9306290058)
 INFO:root:get_activities: skipping download of 9306290058, already present
 INFO:root:get_activities: Walking (9305752728)
 INFO:root:get_activities: skipping download of 9305752728, already present
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpjaztgugx to /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpkdd6ddat to /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
 INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py:Recent monitoring data not found, using: 2025-07-07 : 32
 INFO:root:Date range to update: 2025-07-07 (32) to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring
 INFO:root:Getting daily summaries: 2025-07-07 (32)
@@ -60,102 +61,102 @@ INFO:root:get_summary_day: 2025-08-06
 INFO:root:get_summary_day: 2025-08-07
 INFO:root:Getting hydration: 2025-07-07 (32)
 INFO:root:Getting monitoring: 2025-07-07 (32)
-INFO:root:get_monitoring_day: 2025-07-07 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp52zu0050
+INFO:root:get_monitoring_day: 2025-07-07 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpc3abqqit
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-07
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp52zu0050 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-08 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpdb2dzj2a
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpc3abqqit to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-08 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmph21iqwjq
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-08
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpdb2dzj2a to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-09 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpn505k6ig
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmph21iqwjq to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-09 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp2au3kp50
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-09
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpn505k6ig to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-10 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpwr8niut5
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp2au3kp50 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-10 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpspq9nutb
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-10
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpwr8niut5 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-11 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpi5y2khg8
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpspq9nutb to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-11 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp94dc7dbf
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-11
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpi5y2khg8 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-12 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpp1a6mx9q
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp94dc7dbf to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-12 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp45zlz9dq
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-12
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpp1a6mx9q to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-13 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmps25stpbx
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp45zlz9dq to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-13 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpol7_xw_m
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-13
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmps25stpbx to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-14 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp19fzoi8y
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpol7_xw_m to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-14 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpgolrkr25
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-14
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp19fzoi8y to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-15 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp0j7c17uc
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpgolrkr25 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-15 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp95xafv5a
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-15
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp0j7c17uc to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-16 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpvz7vzsyy
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp95xafv5a to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-16 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmphnvqazhv
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-16
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpvz7vzsyy to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-17 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp_i6m4_9m
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmphnvqazhv to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-17 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp8b6q1v00
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-17
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp_i6m4_9m to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-18 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpeeowhe8v
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp8b6q1v00 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-18 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpb_ajjtlh
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-18
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpeeowhe8v to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-19 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpktugv0pa
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpb_ajjtlh to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-19 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp5kxcus71
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-19
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpktugv0pa to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-20 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpfnb3xtie
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp5kxcus71 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-20 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpkgahs7qk
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-20
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpfnb3xtie to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-21 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpt1epy55e
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpkgahs7qk to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-21 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmprg0p_ehl
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-21
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpt1epy55e to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-22 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpup46j65k
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmprg0p_ehl to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-22 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpobq4s3ov
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-22
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpup46j65k to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-23 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp85x144gs
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpobq4s3ov to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-23 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpa0j1c4tq
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-23
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp85x144gs to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-24 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp301477q7
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpa0j1c4tq to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-24 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp8ugz2p0k
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-24
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp301477q7 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-25 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpuddv_0i_
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp8ugz2p0k to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-25 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpdfebts8t
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-25
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpuddv_0i_ to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-26 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpeaukc9oq
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpdfebts8t to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-26 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpqlnqbahf
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-26
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpeaukc9oq to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-27 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpz19uzy51
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpqlnqbahf to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-27 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpnlda75ct
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-27
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpz19uzy51 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-28 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpdz3xl7gx
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpnlda75ct to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-28 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp4a9abk0h
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-28
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpdz3xl7gx to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-29 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp8rk2s1em
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp4a9abk0h to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-29 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpv5zx8xyk
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-29
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp8rk2s1em to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-30 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpmp3cw8qt
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpv5zx8xyk to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-30 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp0abdu752
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-30
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpmp3cw8qt to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-07-31 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpdnl7cnoi
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp0abdu752 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-07-31 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpuy0a4zkx
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-07-31
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpdnl7cnoi to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-08-01 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmppf6jw7nq
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpuy0a4zkx to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-08-01 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmptn6iud13
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-08-01
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmppf6jw7nq to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-08-02 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmph7u9p2t_
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmptn6iud13 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-08-02 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmph1jja0wq
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-08-02
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmph7u9p2t_ to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-08-03 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpo446nlcz
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmph1jja0wq to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-08-03 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpjsb3h_dl
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-08-03
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpo446nlcz to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-08-04 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpqfi4p8m1
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpjsb3h_dl to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-08-04 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpaj_mzggj
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-08-04
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpqfi4p8m1 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-08-05 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpa__whkr3
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpaj_mzggj to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-08-05 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpsy7_1nfy
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-08-05
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpa__whkr3 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-08-06 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp1awrm7je
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpsy7_1nfy to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-08-06 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp8jbgshjo
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-08-06
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp1awrm7je to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
-INFO:root:get_monitoring_day: 2025-08-07 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp6mndqw45
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp8jbgshjo to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:get_monitoring_day: 2025-08-07 to /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpuk076smk
 ERROR:root:Exception getting daily summary: Error in request: 404 Client Error: Not Found for url: https://connectapi.garmin.com/download-service/files/wellness/2025-08-07
-INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmp6mndqw45 to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
+INFO:root:unzip_files: from /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpuk076smk to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025
 INFO:root:Saved monitoring files for 2025-07-07 (32) to /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring for processing
 INFO:idbutils.db_object:Found time_col_name timestamp for table Attributes
 INFO:idbutils.db_object:Found time_col_name timestamp for table Device
@@ -191,8 +192,8 @@ INFO:root:DB updated with 3 entries from 1 files.
 INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garmindb/fit_data.py:Processing [<FileType.settings: 2>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles
 INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles looking for files matching \w+\.(fit|FIT)
 INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garmindb/import_monitoring.py:Processing daily summary data
-INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring looking for files matching daily_summary_\d{4}-\d{2}-\d{2}\.json and created after 2025-08-07 13:20:19.282691
-INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025 looking for files matching daily_summary_\d{4}-\d{2}-\d{2}\.json and created after 2025-08-07 13:20:19.283396
+INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring looking for files matching daily_summary_\d{4}-\d{2}-\d{2}\.json and created after 2025-08-07 13:53:51.897842
+INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025 looking for files matching daily_summary_\d{4}-\d{2}-\d{2}\.json and created after 2025-08-07 13:53:51.898470
 INFO:root:Found 32 json files for daily_summary_\d{4}-\d{2}-\d{2}\.json in /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring
 INFO:root:Processing 32 json files
 INFO:root:DB updated with 1 entries from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025/daily_summary_2025-07-09.json
@@ -228,8 +229,8 @@ INFO:root:DB updated with 1 entries from /Users/marko.p.milovanovic/HealthData/F
 INFO:root:DB updated with 1 entries from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025/daily_summary_2025-07-30.json
 INFO:root:DB updated with 1 entries from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025/daily_summary_2025-07-26.json
 INFO:root:DB updated with 32 entries from 32 files.
-INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring looking for files matching hydration_\d{4}-\d{2}-\d{2}\.json and created after 2025-08-07 13:20:19.445370
-INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025 looking for files matching hydration_\d{4}-\d{2}-\d{2}\.json and created after 2025-08-07 13:20:19.445477
+INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring looking for files matching hydration_\d{4}-\d{2}-\d{2}\.json and created after 2025-08-07 13:53:52.072690
+INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025 looking for files matching hydration_\d{4}-\d{2}-\d{2}\.json and created after 2025-08-07 13:53:52.072805
 INFO:root:Found 32 json files for hydration_\d{4}-\d{2}-\d{2}\.json in /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring
 INFO:root:Processing 32 json files
 INFO:root:DB updated with 1 entries from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025/hydration_2025-07-10.json
@@ -266,10 +267,10 @@ INFO:root:DB updated with 1 entries from /Users/marko.p.milovanovic/HealthData/F
 INFO:root:DB updated with 1 entries from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025/hydration_2025-07-13.json
 INFO:root:DB updated with 32 entries from 32 files.
 INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garmindb/fit_data.py:Processing [<FileType.monitoring_b: 32>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring
-INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring looking for files matching \w+\.(fit|FIT) and created after 2025-08-07 13:20:19.557428
-INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025 looking for files matching \w+\.(fit|FIT) and created after 2025-08-07 13:20:19.557523
+INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring looking for files matching \w+\.(fit|FIT) and created after 2025-08-07 13:53:52.184524
+INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring/2025 looking for files matching \w+\.(fit|FIT) and created after 2025-08-07 13:53:52.184626
 INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garmindb/import_monitoring.py:Processing sleep data
-INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/Sleep looking for files matching sleep_\d{4}-\d{2}-\d{2}\.json and created after 2025-08-07 13:20:19.557910
+INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/Sleep looking for files matching sleep_\d{4}-\d{2}-\d{2}\.json and created after 2025-08-07 13:53:52.185032
 INFO:root:Found 1462 json files for sleep_\d{4}-\d{2}-\d{2}\.json in /Users/marko.p.milovanovic/HealthData/Sleep
 INFO:root:Processing 1462 json files
 INFO:root:Importing 2024-10-12 without REM data and UTC offset 0
@@ -4571,9 +4572,9 @@ WARNING:root:Could not get sleep score for 2025-01-03
 WARNING:root:No data saved for /Users/marko.p.milovanovic/HealthData/Sleep/sleep_2025-01-03.json
 INFO:root:DB updated with 0 entries from 1462 files.
 INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garmindb/garmin_tcx_data.py:Processing activities tcx data
-INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Activities looking for files matching .*\.tcx and created after 2025-08-07 13:20:23.572446
+INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Activities looking for files matching .*\.tcx and created after 2025-08-07 13:53:57.029503
 INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garmindb/garmin_json_data.py:Processing latest activities summary data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
-INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Activities looking for files matching activity_\d*\.json and created after 2025-08-07 13:20:23.573688
+INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Activities looking for files matching activity_\d*\.json and created after 2025-08-07 13:53:57.030497
 INFO:root:Found 6 json files for activity_\d*\.json in /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
 INFO:idbutils.db_object:Found time_col_name start_time for table Activities
 INFO:idbutils.db_object:Found time_col_name start_time for table ActivityLaps
@@ -4595,7 +4596,7 @@ ERROR:root:Exception in _process_walking from 9305752728 GarminJsonSummaryData: 
 INFO:root:DB updated with 1 entries from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities/activity_9305752728.json
 INFO:root:DB updated with 6 entries from 6 files.
 INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garmindb/garmin_json_data.py:Processing activities detail data
-INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Activities looking for files matching activity_details_\d*\.json and created after 2025-08-07 13:20:23.663379
+INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Activities looking for files matching activity_details_\d*\.json and created after 2025-08-07 13:53:57.128881
 INFO:root:Found 6 json files for activity_details_\d*\.json in /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
 INFO:root:Processing 6 json files
 INFO:root:DB updated with 1 entries from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities/activity_details_9306702781.json
@@ -4607,7 +4608,7 @@ INFO:root:DB updated with 1 entries from /Users/marko.p.milovanovic/HealthData/F
 INFO:root:DB updated with 1 entries from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities/activity_details_9306290058.json
 INFO:root:DB updated with 6 entries from 6 files.
 INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garmindb/fit_data.py:Processing [<FileType.activity: 4>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
-INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Activities looking for files matching \w+\.(fit|FIT) and created after 2025-08-07 13:20:23.727669
+INFO:/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/idbutils/file_processor.py:Reading directory: /Users/marko.p.milovanovic/HealthData/FitFiles/Activities looking for files matching \w+\.(fit|FIT) and created after 2025-08-07 13:53:57.193049
 INFO:root:Debug: 0
 INFO:root:Importing /Users/marko.p.milovanovic/HealthData/FitFiles/Activities/9306675156_ACTIVITY.fit (2022-07-31 01:54:28) [FileType.activity] with message types: [<MessageType.file_id: 0>, <MessageType.file_creator: 49>, <UnknownMessageType.unknown_79: 79>, <MessageType.event: 21>, <MessageType.device_info: 23>, <MessageType.source: 22>, <MessageType.record: 20>, <MessageType.battery: 104>, <MessageType.unknown_233: 233>, <MessageType.lap: 19>, <MessageType.session: 18>, <MessageType.activity: 34>]
 INFO:root:Importing /Users/marko.p.milovanovic/HealthData/FitFiles/Activities/9305752728_ACTIVITY.fit (2022-07-30 20:21:48) [FileType.activity] with message types: [<MessageType.file_id: 0>, <MessageType.file_creator: 49>, <UnknownMessageType.unknown_79: 79>, <MessageType.event: 21>, <MessageType.device_info: 23>, <MessageType.source: 22>, <MessageType.record: 20>, <MessageType.battery: 104>, <MessageType.unknown_233: 233>, <MessageType.unknown_24: 24>, <MessageType.firstbeat: 140>, <MessageType.lap: 19>, <MessageType.session: 18>, <MessageType.activity: 34>]

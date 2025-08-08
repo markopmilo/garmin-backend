@@ -1671,3 +1671,326 @@ Generating table entries for 2025
 100%|██████████| 1/1 [00:00<00:00, 479.40months/s]
 
 exit=0
+
+$ /Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py -a -m -s --download --import --analyze -l
+___Downloading Latest Data___
+Traceback (most recent call last):
+  File "/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garth/http.py", line 143, in request
+    self.last_resp.raise_for_status()
+  File "/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://sso.garmin.com/sso/signin?id=gauth-widget&embedWidget=true&gauthHost=https%3A%2F%2Fsso.garmin.com%2Fsso%2Fembed&service=https%3A%2F%2Fsso.garmin.com%2Fsso%2Fembed&source=https%3A%2F%2Fsso.garmin.com%2Fsso%2Fembed&redirectAfterAccountLoginUrl=https%3A%2F%2Fsso.garmin.com%2Fsso%2Fembed&redirectAfterAccountCreationUrl=https%3A%2F%2Fsso.garmin.com%2Fsso%2Fembed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py", line 374, in <module>
+    main(sys.argv[1:])
+  File "/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py", line 355, in main
+    garminDbMain.download_data(args.overwrite, args.latest, stats)
+  File "/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py", line 114, in download_data
+    if not download.login():
+           ^^^^^^^^^^^^^^^^
+  File "/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garmindb/download.py", line 87, in login
+    self.__login()
+  File "/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garmindb/download.py", line 81, in __login
+    self.garth.login(username, password)
+  File "/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garth/http.py", line 164, in login
+    self.oauth1_token, self.oauth2_token = sso.login(
+                                           ^^^^^^^^^^
+  File "/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garth/sso.py", line 130, in login
+    client.post(
+  File "/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garth/http.py", line 155, in post
+    return self.request("POST", *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/lib/python3.11/site-packages/garth/http.py", line 145, in request
+    raise GarthHTTPError(
+garth.exc.GarthHTTPError: Error in request: 401 Client Error: Unauthorized for url: https://sso.garmin.com/sso/signin?id=gauth-widget&embedWidget=true&gauthHost=https%3A%2F%2Fsso.garmin.com%2Fsso%2Fembed&service=https%3A%2F%2Fsso.garmin.com%2Fsso%2Fembed&source=https%3A%2F%2Fsso.garmin.com%2Fsso%2Fembed&redirectAfterAccountLoginUrl=https%3A%2F%2Fsso.garmin.com%2Fsso%2Fembed&redirectAfterAccountCreationUrl=https%3A%2F%2Fsso.garmin.com%2Fsso%2Fembed
+
+exit=1
+
+$ /Users/marko.p.milovanovic/PycharmProjects/Garmin/Backend/venv/bin/garmindb_cli.py -a -m -s --download --import --analyze -l
+___Downloading Latest Data___
+Getting activities: '/Users/marko.p.milovanovic/HealthData/FitFiles/Activities' (25) temp /var/folders/4x/ydh1jk493x7chvmj25hx3hz00000gn/T/tmpkdd6ddat
+Recent monitoring data not found, using: 2025-07-07 : 32
+Recent sleep data not found, using: 2025-07-07 : 32
+___Importing Latest Data___
+Processing user settings data
+Processing profile data
+Processing profile data: {'measurement_system': 'DisplayMeasure.statute', 'gender': 'Gender.male', 'weight': 153.999530419, 'height': 5.741469825, 'vo2max_running': None, 'vo2max_cycling': None, 'handedness': 'right'}
+Processing user personal information data
+Processing profile data
+Processing profile data: {'locale': 'en', 'time_zone': 'America/Los_Angeles', 'country_code': 'US'}
+Processing user settings data
+Processing profile data
+Processing profile data: {'id': 400761600, 'userName': 'marko.p.milovanovich@gmail.com', 'name': 'Marko Milovanovic'}
+Processing [<FileType.settings: 2>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles
+Processing daily summary data
+Processing [<FileType.monitoring_b: 32>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Monitoring
+Processing sleep data
+Processing activities tcx data
+Processing latest activities summary data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+Processing activities detail data
+Processing [<FileType.activity: 4>] FIT data from /Users/marko.p.milovanovic/HealthData/FitFiles/Activities
+___Analyzing Data___
+Summary Tables Generation:
+Generating table entries for 2022
+Generating table entries for 2025
+
+  0%|          | 0/6 [00:00<?, ?activities/s]
+100%|██████████| 6/6 [00:00<00:00, 6953.81activities/s]
+
+  0%|          | 0/32 [00:00<?, ?days/s]
+  3%|▎         | 1/32 [00:01<00:34,  1.10s/days]
+  6%|▋         | 2/32 [00:02<00:34,  1.14s/days]
+  9%|▉         | 3/32 [00:03<00:37,  1.29s/days]
+ 12%|█▎        | 4/32 [00:04<00:34,  1.22s/days]
+ 16%|█▌        | 5/32 [00:05<00:31,  1.18s/days]
+ 19%|█▉        | 6/32 [00:07<00:30,  1.15s/days]
+ 22%|██▏       | 7/32 [00:08<00:28,  1.14s/days]
+ 25%|██▌       | 8/32 [00:09<00:27,  1.13s/days]
+ 28%|██▊       | 9/32 [00:10<00:25,  1.13s/days]
+ 31%|███▏      | 10/32 [00:11<00:24,  1.12s/days]
+ 34%|███▍      | 11/32 [00:12<00:23,  1.12s/days]
+ 38%|███▊      | 12/32 [00:13<00:22,  1.12s/days]
+ 41%|████      | 13/32 [00:14<00:21,  1.12s/days]
+ 44%|████▍     | 14/32 [00:15<00:20,  1.12s/days]
+ 47%|████▋     | 15/32 [00:17<00:19,  1.12s/days]
+ 50%|█████     | 16/32 [00:18<00:18,  1.13s/days]
+ 53%|█████▎    | 17/32 [00:19<00:16,  1.13s/days]
+ 56%|█████▋    | 18/32 [00:20<00:15,  1.13s/days]
+ 59%|█████▉    | 19/32 [00:21<00:14,  1.12s/days]
+ 62%|██████▎   | 20/32 [00:22<00:13,  1.12s/days]
+ 66%|██████▌   | 21/32 [00:23<00:12,  1.11s/days]
+ 69%|██████▉   | 22/32 [00:24<00:11,  1.11s/days]
+ 72%|███████▏  | 23/32 [00:26<00:10,  1.11s/days]
+ 75%|███████▌  | 24/32 [00:27<00:08,  1.11s/days]
+ 78%|███████▊  | 25/32 [00:28<00:07,  1.12s/days]
+ 81%|████████▏ | 26/32 [00:29<00:06,  1.12s/days]
+ 84%|████████▍ | 27/32 [00:30<00:05,  1.12s/days]
+ 88%|████████▊ | 28/32 [00:31<00:04,  1.13s/days]
+ 91%|█████████ | 29/32 [00:32<00:03,  1.12s/days]
+ 94%|█████████▍| 30/32 [00:33<00:02,  1.12s/days]
+ 97%|█████████▋| 31/32 [00:35<00:01,  1.12s/days]
+100%|██████████| 32/32 [00:36<00:00,  1.12s/days]
+100%|██████████| 32/32 [00:36<00:00,  1.13s/days]
+
+  0%|          | 0/32 [00:00<?, ?days/s]
+  3%|▎         | 1/32 [00:01<00:34,  1.12s/days]
+  6%|▋         | 2/32 [00:02<00:33,  1.12s/days]
+  9%|▉         | 3/32 [00:03<00:32,  1.13s/days]
+ 12%|█▎        | 4/32 [00:04<00:31,  1.12s/days]
+ 16%|█▌        | 5/32 [00:05<00:30,  1.12s/days]
+ 19%|█▉        | 6/32 [00:06<00:29,  1.12s/days]
+ 22%|██▏       | 7/32 [00:07<00:27,  1.12s/days]
+ 25%|██▌       | 8/32 [00:08<00:26,  1.11s/days]
+ 28%|██▊       | 9/32 [00:10<00:26,  1.16s/days]
+ 31%|███▏      | 10/32 [00:11<00:25,  1.15s/days]
+ 34%|███▍      | 11/32 [00:12<00:24,  1.14s/days]
+ 38%|███▊      | 12/32 [00:13<00:22,  1.13s/days]
+ 41%|████      | 13/32 [00:14<00:21,  1.13s/days]
+ 44%|████▍     | 14/32 [00:15<00:20,  1.13s/days]
+ 47%|████▋     | 15/32 [00:16<00:19,  1.13s/days]
+ 50%|█████     | 16/32 [00:18<00:18,  1.13s/days]
+ 53%|█████▎    | 17/32 [00:19<00:17,  1.15s/days]
+ 56%|█████▋    | 18/32 [00:20<00:15,  1.14s/days]
+ 59%|█████▉    | 19/32 [00:21<00:14,  1.14s/days]
+ 62%|██████▎   | 20/32 [00:22<00:13,  1.13s/days]
+ 66%|██████▌   | 21/32 [00:23<00:12,  1.13s/days]
+ 69%|██████▉   | 22/32 [00:24<00:11,  1.12s/days]
+ 72%|███████▏  | 23/32 [00:26<00:10,  1.12s/days]
+ 75%|███████▌  | 24/32 [00:27<00:08,  1.12s/days]
+ 78%|███████▊  | 25/32 [00:28<00:07,  1.12s/days]
+ 81%|████████▏ | 26/32 [00:29<00:06,  1.12s/days]
+ 84%|████████▍ | 27/32 [00:30<00:05,  1.13s/days]
+ 88%|████████▊ | 28/32 [00:31<00:04,  1.12s/days]
+ 91%|█████████ | 29/32 [00:32<00:03,  1.12s/days]
+ 94%|█████████▍| 30/32 [00:33<00:02,  1.12s/days]
+ 97%|█████████▋| 31/32 [00:34<00:01,  1.12s/days]
+100%|██████████| 32/32 [00:36<00:00,  1.13s/days]
+100%|██████████| 32/32 [00:36<00:00,  1.13s/days]
+
+  0%|          | 0/32 [00:00<?, ?days/s]
+  3%|▎         | 1/32 [00:01<00:35,  1.15s/days]
+  6%|▋         | 2/32 [00:02<00:35,  1.20s/days]
+  9%|▉         | 3/32 [00:03<00:34,  1.21s/days]
+ 12%|█▎        | 4/32 [00:04<00:33,  1.18s/days]
+ 16%|█▌        | 5/32 [00:06<00:34,  1.27s/days]
+ 19%|█▉        | 6/32 [00:07<00:32,  1.23s/days]
+ 22%|██▏       | 7/32 [00:08<00:30,  1.21s/days]
+ 25%|██▌       | 8/32 [00:09<00:28,  1.19s/days]
+ 28%|██▊       | 9/32 [00:10<00:27,  1.19s/days]
+ 31%|███▏      | 10/32 [00:11<00:25,  1.18s/days]
+ 34%|███▍      | 11/32 [00:13<00:24,  1.18s/days]
+ 38%|███▊      | 12/32 [00:14<00:23,  1.17s/days]
+ 41%|████      | 13/32 [00:15<00:22,  1.17s/days]
+ 44%|████▍     | 14/32 [00:16<00:20,  1.16s/days]
+ 47%|████▋     | 15/32 [00:17<00:19,  1.17s/days]
+ 50%|█████     | 16/32 [00:18<00:18,  1.17s/days]
+ 53%|█████▎    | 17/32 [00:20<00:17,  1.16s/days]
+ 56%|█████▋    | 18/32 [00:21<00:16,  1.21s/days]
+ 59%|█████▉    | 19/32 [00:22<00:15,  1.19s/days]
+ 62%|██████▎   | 20/32 [00:23<00:14,  1.18s/days]
+ 66%|██████▌   | 21/32 [00:24<00:12,  1.17s/days]
+ 69%|██████▉   | 22/32 [00:26<00:11,  1.17s/days]
+ 72%|███████▏  | 23/32 [00:27<00:10,  1.16s/days]
+ 75%|███████▌  | 24/32 [00:28<00:09,  1.16s/days]
+ 78%|███████▊  | 25/32 [00:29<00:08,  1.15s/days]
+ 81%|████████▏ | 26/32 [00:30<00:06,  1.15s/days]
+ 84%|████████▍ | 27/32 [00:31<00:05,  1.15s/days]
+ 88%|████████▊ | 28/32 [00:32<00:04,  1.15s/days]
+ 91%|█████████ | 29/32 [00:34<00:03,  1.15s/days]
+ 94%|█████████▍| 30/32 [00:35<00:02,  1.15s/days]
+ 97%|█████████▋| 31/32 [00:36<00:01,  1.16s/days]
+100%|██████████| 32/32 [00:37<00:00,  1.16s/days]
+100%|██████████| 32/32 [00:37<00:00,  1.17s/days]
+
+  0%|          | 0/32 [00:00<?, ?days/s]
+  3%|▎         | 1/32 [00:01<00:35,  1.16s/days]
+  6%|▋         | 2/32 [00:02<00:33,  1.12s/days]
+  9%|▉         | 3/32 [00:03<00:32,  1.11s/days]
+ 12%|█▎        | 4/32 [00:04<00:31,  1.11s/days]
+ 16%|█▌        | 5/32 [00:05<00:30,  1.11s/days]
+ 19%|█▉        | 6/32 [00:06<00:28,  1.11s/days]
+ 22%|██▏       | 7/32 [00:07<00:27,  1.10s/days]
+ 25%|██▌       | 8/32 [00:08<00:26,  1.10s/days]
+ 28%|██▊       | 9/32 [00:09<00:25,  1.10s/days]
+ 31%|███▏      | 10/32 [00:11<00:24,  1.10s/days]
+ 34%|███▍      | 11/32 [00:12<00:23,  1.10s/days]
+ 38%|███▊      | 12/32 [00:13<00:22,  1.10s/days]
+ 41%|████      | 13/32 [00:14<00:21,  1.11s/days]
+ 44%|████▍     | 14/32 [00:15<00:19,  1.11s/days]
+ 47%|████▋     | 15/32 [00:16<00:18,  1.11s/days]
+ 50%|█████     | 16/32 [00:17<00:17,  1.11s/days]
+ 53%|█████▎    | 17/32 [00:18<00:16,  1.11s/days]
+ 56%|█████▋    | 18/32 [00:19<00:15,  1.11s/days]
+ 59%|█████▉    | 19/32 [00:21<00:14,  1.11s/days]
+ 62%|██████▎   | 20/32 [00:22<00:13,  1.10s/days]
+ 66%|██████▌   | 21/32 [00:23<00:12,  1.10s/days]
+ 69%|██████▉   | 22/32 [00:24<00:11,  1.10s/days]
+ 72%|███████▏  | 23/32 [00:25<00:09,  1.10s/days]
+ 75%|███████▌  | 24/32 [00:26<00:08,  1.10s/days]
+ 78%|███████▊  | 25/32 [00:27<00:07,  1.10s/days]
+ 81%|████████▏ | 26/32 [00:28<00:06,  1.11s/days]
+ 84%|████████▍ | 27/32 [00:29<00:05,  1.11s/days]
+ 88%|████████▊ | 28/32 [00:30<00:04,  1.11s/days]
+ 91%|█████████ | 29/32 [00:32<00:03,  1.12s/days]
+ 94%|█████████▍| 30/32 [00:33<00:02,  1.11s/days]
+ 97%|█████████▋| 31/32 [00:34<00:01,  1.11s/days]
+100%|██████████| 32/32 [00:35<00:00,  1.13s/days]
+100%|██████████| 32/32 [00:35<00:00,  1.11s/days]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 45.24files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 127.31files/s]
+
+  0%|          | 0/1 [00:00<?, ?files/s]
+100%|██████████| 1/1 [00:00<00:00, 128.87files/s]
+
+  0%|          | 0/32 [00:00<?, ?files/s]
+ 88%|████████▊ | 28/32 [00:00<00:00, 271.27files/s]
+100%|██████████| 32/32 [00:00<00:00, 273.50files/s]
+
+  0%|          | 0/32 [00:00<?, ?files/s]
+100%|██████████| 32/32 [00:00<00:00, 371.36files/s]
+
+  0%|          | 0/1462 [00:00<?, ?files/s]
+  2%|▏         | 27/1462 [00:00<00:05, 260.96files/s]
+  4%|▍         | 57/1462 [00:00<00:04, 281.70files/s]
+  7%|▋         | 96/1462 [00:00<00:04, 328.83files/s]
+  9%|▉         | 135/1462 [00:00<00:03, 349.06files/s]
+ 12%|█▏        | 175/1462 [00:00<00:03, 364.74files/s]
+ 15%|█▍        | 212/1462 [00:00<00:03, 365.45files/s]
+ 17%|█▋        | 249/1462 [00:00<00:03, 337.40files/s]
+ 19%|█▉        | 285/1462 [00:00<00:03, 341.17files/s]
+ 22%|██▏       | 320/1462 [00:00<00:03, 319.33files/s]
+ 24%|██▍       | 353/1462 [00:01<00:03, 314.29files/s]
+ 26%|██▋       | 385/1462 [00:01<00:03, 308.38files/s]
+ 29%|██▉       | 421/1462 [00:01<00:03, 321.52files/s]
+ 31%|███       | 454/1462 [00:01<00:03, 309.41files/s]
+ 33%|███▎      | 486/1462 [00:01<00:04, 235.07files/s]
+ 35%|███▌      | 518/1462 [00:01<00:03, 254.28files/s]
+ 37%|███▋      | 547/1462 [00:01<00:03, 262.28files/s]
+ 40%|███▉      | 580/1462 [00:01<00:03, 279.14files/s]
+ 42%|████▏     | 610/1462 [00:02<00:03, 280.26files/s]
+ 44%|████▍     | 642/1462 [00:02<00:02, 289.46files/s]
+ 46%|████▌     | 674/1462 [00:02<00:02, 296.88files/s]
+ 48%|████▊     | 705/1462 [00:02<00:02, 289.13files/s]
+ 50%|█████     | 735/1462 [00:02<00:02, 287.80files/s]
+ 52%|█████▏    | 765/1462 [00:02<00:02, 287.00files/s]
+ 54%|█████▍    | 796/1462 [00:02<00:02, 291.19files/s]
+ 57%|█████▋    | 828/1462 [00:02<00:02, 297.23files/s]
+ 59%|█████▊    | 858/1462 [00:02<00:02, 297.81files/s]
+ 61%|██████    | 891/1462 [00:02<00:01, 305.45files/s]
+ 63%|██████▎   | 922/1462 [00:03<00:01, 303.28files/s]
+ 65%|██████▌   | 956/1462 [00:03<00:01, 314.00files/s]
+ 68%|██████▊   | 988/1462 [00:03<00:01, 310.57files/s]
+ 70%|██████▉   | 1020/1462 [00:03<00:01, 304.76files/s]
+ 72%|███████▏  | 1051/1462 [00:03<00:01, 288.59files/s]
+ 74%|███████▍  | 1085/1462 [00:03<00:01, 301.63files/s]
+ 76%|███████▋  | 1118/1462 [00:03<00:01, 308.08files/s]
+ 79%|███████▊  | 1151/1462 [00:03<00:00, 313.89files/s]
+ 81%|████████  | 1186/1462 [00:03<00:00, 323.34files/s]
+ 83%|████████▎ | 1219/1462 [00:04<00:00, 315.99files/s]
+ 86%|████████▌ | 1251/1462 [00:04<00:00, 309.77files/s]
+ 88%|████████▊ | 1283/1462 [00:04<00:00, 297.48files/s]
+ 90%|████████▉ | 1315/1462 [00:04<00:00, 301.82files/s]
+ 93%|█████████▎| 1353/1462 [00:04<00:00, 322.44files/s]
+ 95%|█████████▌| 1390/1462 [00:04<00:00, 334.89files/s]
+ 97%|█████████▋| 1424/1462 [00:04<00:00, 325.90files/s]
+100%|█████████▉| 1457/1462 [00:04<00:00, 311.25files/s]
+100%|██████████| 1462/1462 [00:04<00:00, 304.64files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 180.67files/s]
+
+  0%|          | 0/6 [00:00<?, ?files/s]
+100%|██████████| 6/6 [00:00<00:00, 202.39files/s]
+
+  0%|          | 0/5 [00:00<?, ?files/s]
+ 20%|██        | 1/5 [00:00<00:00,  6.43files/s]
+ 40%|████      | 2/5 [00:00<00:00,  7.78files/s]
+ 60%|██████    | 3/5 [00:00<00:00,  5.35files/s]
+ 80%|████████  | 4/5 [00:00<00:00,  5.04files/s]
+100%|██████████| 5/5 [00:00<00:00,  5.93files/s]
+100%|██████████| 5/5 [00:00<00:00,  5.86files/s]
+
+  0%|          | 0/2 [00:00<?, ?days/s]
+100%|██████████| 2/2 [00:00<00:00, 28.71days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+  4%|▍         | 2/52 [00:00<00:02, 17.66weeks/s]
+ 12%|█▏        | 6/52 [00:00<00:01, 29.77weeks/s]
+ 19%|█▉        | 10/52 [00:00<00:01, 32.92weeks/s]
+ 29%|██▉       | 15/52 [00:00<00:01, 36.81weeks/s]
+ 38%|███▊      | 20/52 [00:00<00:00, 38.23weeks/s]
+ 48%|████▊     | 25/52 [00:00<00:00, 38.63weeks/s]
+ 58%|█████▊    | 30/52 [00:00<00:00, 39.41weeks/s]
+ 65%|██████▌   | 34/52 [00:00<00:00, 39.24weeks/s]
+ 73%|███████▎  | 38/52 [00:01<00:00, 39.18weeks/s]
+ 81%|████████  | 42/52 [00:01<00:00, 39.32weeks/s]
+ 90%|█████████ | 47/52 [00:01<00:00, 40.20weeks/s]
+100%|██████████| 52/52 [00:01<00:00, 40.33weeks/s]
+100%|██████████| 52/52 [00:01<00:00, 38.12weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 108.28months/s]
+
+  0%|          | 0/1 [00:00<?, ?days/s]
+100%|██████████| 1/1 [00:00<00:00, 439.33days/s]
+
+  0%|          | 0/52 [00:00<?, ?weeks/s]
+  8%|▊         | 4/52 [00:00<00:01, 38.99weeks/s]
+ 17%|█▋        | 9/52 [00:00<00:01, 40.63weeks/s]
+ 27%|██▋       | 14/52 [00:00<00:00, 41.68weeks/s]
+ 37%|███▋      | 19/52 [00:00<00:00, 35.04weeks/s]
+ 44%|████▍     | 23/52 [00:00<00:00, 36.46weeks/s]
+ 54%|█████▍    | 28/52 [00:00<00:00, 38.07weeks/s]
+100%|██████████| 52/52 [00:00<00:00, 62.61weeks/s]
+
+  0%|          | 0/1 [00:00<?, ?months/s]
+100%|██████████| 1/1 [00:00<00:00, 509.64months/s]
+
+exit=0

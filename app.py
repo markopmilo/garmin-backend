@@ -63,22 +63,12 @@ def _write_cfg(cfg: dict):
 @app.get("/api/config")
 def get_config():
     cfg = _read_cfg()
-    # NEVER send the password back to the UI unless you really want to.
-    # Comment out the next line if you prefer to return it.
     if "credentials" in cfg and "password" in cfg["credentials"]:
         cfg["credentials"]["password"] = ""
     return jsonify(cfg)
 
 @app.post("/api/config")
 def update_config():
-    """
-    Accepts partial updates like:
-    {
-      "credentials": {"user":"...", "password":"...", "secure_password": false},
-      "data": {"sleep_start_date":"6/7/2025", "monitoring_start_date":"8/7/2025"},
-      "garmin": {"domain": "garmin.com"}
-    }
-    """
     payload = request.get_json(silent=True) or {}
     cfg = _read_cfg()
 
