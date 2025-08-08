@@ -1,13 +1,15 @@
+import json
 import os
+import shutil
 import sqlite3
 import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
+
 import pandas as pd
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-import json
 
 UPDATE_LOG = Path(__file__).parent / "update.log"
 
@@ -15,6 +17,17 @@ app = Flask(__name__)
 CORS(app)
 
 DB_PATH = Path.home() / "HealthData/DBs/garmin.db"
+
+DATA_ROOT = Path.home() / "HealthData"
+
+# exact structure you said:
+REQUIRED_PATHS = [
+    DATA_ROOT / "DBs",
+    DATA_ROOT / "FitFiles" / "Activities",
+    DATA_ROOT / "FitFiles" / "Monitoring",
+    DATA_ROOT / "Plugins",
+    DATA_ROOT / "Sleep",
+]
 
 
 CFG_PATH = os.path.expanduser("~/.GarminDb/GarminConnectConfig.json")
@@ -37,6 +50,15 @@ DEFAULT_CFG = {
         "download_all_activities": 1000
     }
 }
+
+def _ensure_healthdata_tree():
+    created = []
+    DATA_ROOT.mkdir(parents=True, exist_ok=True)
+    for p in REQUIRED_PATHS:
+        if not p.exists():
+            p.mkdir(parents=True, exist_ok=True)
+            created.append(str(p))
+    return created
 
 def _read_cfg():
     os.makedirs(os.path.dirname(CFG_PATH), exist_ok=True)
@@ -164,7 +186,7 @@ def fetch_daily_summary():
             FROM daily_summary ds
             LEFT JOIN sleep_summary ss ON ss.day = ds.day
             ORDER BY ds.day DESC
-            LIMIT 30
+            
             """
         else:
             query = """
@@ -175,7 +197,7 @@ def fetch_daily_summary():
               NULL                     AS sleepSeconds
             FROM daily_summary
             ORDER BY day DESC
-            LIMIT 30
+            
             """
         df = pd.read_sql(query, con)
         return df.to_dict(orient="records")
@@ -183,16 +205,25 @@ def fetch_daily_summary():
         con.close()
 
 def _to_seconds(series):
+    # if numeric seconds, use as-is
+    num = pd.to_numeric(series, errors="coerce")
+    if num.notna().any():
+        return num.astype(float)
+    # otherwise parse HH:MM:SS strings
     return pd.to_timedelta(series, errors="coerce").dt.total_seconds()
 
-def fetch_sleep(days: int = 30):
+def fetch_sleep():
     con = sqlite3.connect(DB_PATH)
     try:
+        # Ensure table exists
         cur = con.cursor()
         cur.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='sleep'")
         if not cur.fetchone():
-            raise RuntimeError("No 'sleep' table found. Expected columns: day, total_sleep, deep_sleep, light_sleep, rem_sleep, awake")
+            raise RuntimeError(
+                "No 'sleep' table found. Expected columns: day, total_sleep, deep_sleep, light_sleep, rem_sleep, awake"
+            )
 
+        # Pull everything we might need; missing cols are handled below
         q = """
         SELECT
           day,
@@ -208,33 +239,46 @@ def fetch_sleep(days: int = 30):
           qualifier
         FROM sleep
         ORDER BY day DESC
-        LIMIT ?
         """
-        df = pd.read_sql(q, con, params=(days,))
+        df = pd.read_sql(q, con)
 
-        for col in ["total_sleep", "deep_sleep", "light_sleep", "rem_sleep", "awake"]:
+        # Build seconds/hours columns defensively
+        stage_cols = ["total_sleep", "deep_sleep", "light_sleep", "rem_sleep", "awake"]
+        for col in stage_cols:
             sec_col = f"{col}_seconds"
             hr_col  = f"{col}_hours"
-            secs = _to_seconds(df[col])
-            df[sec_col] = secs.astype("Int64")  # keep as nullable int
-            df[hr_col] = (secs / 3600.0).round(2)
+            if col in df.columns:
+                secs = _to_seconds(df[col])  # uses your helper
+                # seconds as nullable int, hours as float
+                df[sec_col] = secs.astype("Int64")
+                df[hr_col]  = (secs / 3600.0).round(2)
+            else:
+                # Column missing in DB -> fill with nulls
+                df[sec_col] = pd.Series([pd.NA] * len(df), dtype="Int64")
+                df[hr_col]  = pd.Series([float("nan")] * len(df), dtype="float")
 
+        # Rename and order columns (only keep those that actually exist)
         df = df.rename(columns={"day": "date"})
-
-        out_cols = [
+        preferred = [
             "date",
             "total_sleep", "total_sleep_seconds", "total_sleep_hours",
             "deep_sleep",  "deep_sleep_seconds",  "deep_sleep_hours",
             "light_sleep", "light_sleep_seconds", "light_sleep_hours",
             "rem_sleep",   "rem_sleep_seconds",   "rem_sleep_hours",
             "awake",       "awake_seconds",       "awake_hours",
-            "avg_spo2", "avg_rr", "avg_stress", "score", "qualifier"
+            "avg_spo2", "avg_rr", "avg_stress", "score", "qualifier",
         ]
-        return df[out_cols].to_dict(orient="records")
+        out_cols_present = [c for c in preferred if c in df.columns]
+
+        # JSON-safe: NaN -> None
+        import numpy as np  # safe if already imported above
+        df = df.replace({np.nan: None})
+
+        return df[out_cols_present].to_dict(orient="records")
     finally:
         con.close()
 
-def fetch_steps(days: int = 30):
+def fetch_steps():
     con = sqlite3.connect(DB_PATH)
     try:
         if not _table_exists(con, "daily_summary"):
@@ -250,14 +294,13 @@ def fetch_steps(days: int = 30):
         SELECT day AS date, steps{extra}
         FROM daily_summary
         ORDER BY day DESC
-        LIMIT ?
         """
-        df = pd.read_sql(q, con, params=(days,))
+        df = pd.read_sql(q, con)
         return df.to_dict(orient="records")
     finally:
         con.close()
 
-def fetch_stress(days: int = 30):
+def fetch_stress():
     con = sqlite3.connect(DB_PATH)
     try:
         if not _table_exists(con, "daily_summary"):
@@ -271,14 +314,13 @@ def fetch_stress(days: int = 30):
         FROM daily_summary
         WHERE stress_avg IS NOT NULL
         ORDER BY day DESC
-        LIMIT ?
         """
-        df = pd.read_sql(q, con, params=(days,))
+        df = pd.read_sql(q, con)
         return df.to_dict(orient="records")
     finally:
         con.close()
 
-def fetch_exercise(days: int = 30):
+def fetch_exercise():
     con = sqlite3.connect(DB_PATH)
     try:
         if not _table_exists(con, "daily_summary"):
@@ -303,9 +345,8 @@ def fetch_exercise(days: int = 30):
         SELECT {", ".join(select_bits)}
         FROM daily_summary
         ORDER BY day DESC
-        LIMIT ?
         """
-        df = pd.read_sql(q, con, params=(days,))
+        df = pd.read_sql(q, con)
 
         def to_seconds(series):
             # handles 'HH:MM:SS' strings; returns int or NaN
@@ -329,6 +370,32 @@ def fetch_exercise(days: int = 30):
         return df[cols_out].to_dict(orient="records")
     finally:
         con.close()
+
+
+@app.post("/api/ensure-folders")
+def ensure_folders():
+    try:
+        created = _ensure_healthdata_tree()
+
+        # ensure ~/.GarminDb exists + config file (write default if missing)
+        cfg_dir = Path(CFG_PATH).parent
+        if not cfg_dir.exists():
+            cfg_dir.mkdir(parents=True, exist_ok=True)
+        wrote_cfg = False
+        if not Path(CFG_PATH).exists():
+            _write_cfg(DEFAULT_CFG.copy())
+            wrote_cfg = True
+
+        return jsonify({
+            "ok": True,
+            "data_root": str(DATA_ROOT),
+            "created_paths": created,
+            "config_path": str(CFG_PATH),
+            "wrote_default_config": wrote_cfg,
+        }), 200
+    except Exception as e:
+        app.logger.exception("ensure-folders failed")
+        return jsonify({"ok": False, "error": str(e)}), 500
 
 @app.post("/api/update")
 def update_garmin_data():
@@ -358,7 +425,7 @@ def stress_endpoint():
     if not DB_PATH.exists():
         return jsonify({"error": f"Database not found at {DB_PATH}"}), 503
     try:
-        return jsonify(fetch_stress(30))
+        return jsonify(fetch_stress())
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -367,7 +434,7 @@ def steps():
     if not DB_PATH.exists():
         return jsonify({"error": f"Database not found at {DB_PATH}"}), 503
     try:
-        return jsonify(fetch_steps(30))
+        return jsonify(fetch_steps())
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -377,7 +444,7 @@ def exercise():
     if not DB_PATH.exists():
         return jsonify({"error": f"Database not found at {DB_PATH}"}), 503
     try:
-        return jsonify(fetch_exercise(30))
+        return jsonify(fetch_exercise())
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -386,7 +453,7 @@ def sleep():
     if not DB_PATH.exists():
         return jsonify({"error": f"Database not found at {DB_PATH}"}), 503
     try:
-        return jsonify(fetch_sleep(days=30))
+        return jsonify(fetch_sleep())
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -398,27 +465,33 @@ def root():
 def health():
     return "ok", 200
 
+@app.get("/api/db-info")
+def db_info():
+    p = Path(DB_PATH)
+    return jsonify({
+        "db_path": str(p),
+        "exists": p.exists(),
+        "size_bytes": p.stat().st_size if p.exists() else 0,
+    })
+
 @app.delete("/api/erase")
 def erase_data():
-    if not DB_PATH.exists():
-        return jsonify({"error": f"Database not found at {DB_PATH}"}), 503
+    target = Path.home() / "HealthData"
+
+    if not target.exists():
+        return jsonify({"error": f"No HealthData folder found at {target}"}), 503
 
     if request.args.get("confirm") != "true":
-        return jsonify({"error": "You must pass ?confirm=true to erase data"}), 400
+        return jsonify({"error": "You must pass ?confirm=true to erase all data"}), 400
 
     try:
-        con = sqlite3.connect(DB_PATH)
-        cur = con.cursor()
+        for item in target.iterdir():
+            if item.is_dir():
+                shutil.rmtree(item)
+            else:
+                item.unlink()
 
-        cur.execute("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'")
-        tables = [row[0] for row in cur.fetchall()]
-
-        for table in tables:
-            cur.execute(f"DELETE FROM {table}")
-        con.commit()
-        con.close()
-
-        return jsonify({"status": "erased", "tables_cleared": tables}), 200
+        return jsonify({"status": "erased_all_contents", "path_cleared": str(target)}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
