@@ -7,6 +7,7 @@ from pathlib import Path
 import pandas as pd
 from flask import Flask, jsonify, request
 from flask_cors import CORS
+import json
 
 UPDATE_LOG = Path(__file__).parent / "update.log"
 
@@ -14,6 +15,98 @@ app = Flask(__name__)
 CORS(app)
 
 DB_PATH = Path.home() / "HealthData/DBs/garmin.db"
+
+
+CFG_PATH = os.path.expanduser("~/.GarminDb/GarminConnectConfig.json")
+
+DEFAULT_CFG = {
+    "db": {"type": "sqlite"},
+    "garmin": {"domain": "garmin.com"},
+    "credentials": {
+        "user": "",
+        "secure_password": False,
+        "password": "",
+        "password_file": None
+    },
+    "data": {
+        "weight_start_date": "",
+        "sleep_start_date": "",
+        "rhr_start_date": "",
+        "monitoring_start_date": "",
+        "download_latest_activities": 25,
+        "download_all_activities": 1000
+    }
+}
+
+def _read_cfg():
+    os.makedirs(os.path.dirname(CFG_PATH), exist_ok=True)
+    if not os.path.exists(CFG_PATH):
+        with open(CFG_PATH, "w") as f:
+            json.dump(DEFAULT_CFG, f, indent=4)
+        try:
+            os.chmod(CFG_PATH, 0o600)
+        except Exception:
+            pass
+        return DEFAULT_CFG.copy()
+    with open(CFG_PATH, "r") as f:
+        return json.load(f)
+
+def _write_cfg(cfg: dict):
+    os.makedirs(os.path.dirname(CFG_PATH), exist_ok=True)
+    with open(CFG_PATH, "w") as f:
+        json.dump(cfg, f, indent=4)
+    try:
+        os.chmod(CFG_PATH, 0o600)
+    except Exception:
+        pass
+
+@app.get("/api/config")
+def get_config():
+    cfg = _read_cfg()
+    # NEVER send the password back to the UI unless you really want to.
+    # Comment out the next line if you prefer to return it.
+    if "credentials" in cfg and "password" in cfg["credentials"]:
+        cfg["credentials"]["password"] = ""
+    return jsonify(cfg)
+
+@app.post("/api/config")
+def update_config():
+    """
+    Accepts partial updates like:
+    {
+      "credentials": {"user":"...", "password":"...", "secure_password": false},
+      "data": {"sleep_start_date":"6/7/2025", "monitoring_start_date":"8/7/2025"},
+      "garmin": {"domain": "garmin.com"}
+    }
+    """
+    payload = request.get_json(silent=True) or {}
+    cfg = _read_cfg()
+
+    if "credentials" in payload:
+        cfg.setdefault("credentials", {})
+        for k in ("user", "password", "secure_password", "password_file"):
+            if k in payload["credentials"]:
+                cfg["credentials"][k] = payload["credentials"][k]
+
+    if "data" in payload:
+        cfg.setdefault("data", {})
+        for k in (
+            "weight_start_date",
+            "sleep_start_date",
+            "rhr_start_date",
+            "monitoring_start_date",
+            "download_latest_activities",
+            "download_all_activities",
+        ):
+            if k in payload["data"]:
+                cfg["data"][k] = payload["data"][k]
+
+    if "garmin" in payload and "domain" in payload["garmin"]:
+        cfg.setdefault("garmin", {})
+        cfg["garmin"]["domain"] = payload["garmin"]["domain"]
+
+    _write_cfg(cfg)
+    return jsonify({"ok": True})
 
 def _run_update_sync():
     env = os.environ.copy()
