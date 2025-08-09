@@ -491,6 +491,13 @@ def erase_data():
             else:
                 item.unlink()
 
+        garth_session = (Path.home() / ".GarminDb" / "garth_session")
+        if garth_session.exists():
+            try:
+                garth_session.unlink()
+            except Exception as e:
+                return jsonify({"error": str(e)}), 500
+
         return jsonify({"status": "erased_all_contents", "path_cleared": str(target)}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
